@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🛡️ OSINT-Powered Network Security System</h1>
+  <h1> OSINT-Powered Network Security System</h1>
   <p><strong>An Enterprise-Grade, AI-Driven Security Operations Center (SOC) Dashboard</strong></p>
 
   <p>
@@ -13,7 +13,7 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 The **OSINT-Powered Network Security System** is a comprehensive, production-ready Security Operations Center (SOC) intelligence platform. It seamlessly merges **Open Source Intelligence (OSINT)** gathering with **AI-driven threat analysis**, providing security analysts with real-time, actionable insights into network vulnerabilities, malicious IPs, and domain reputations.
 
@@ -21,18 +21,18 @@ Built with a highly responsive, glassmorphic UI, robust Role-Based Access Contro
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- 🔍 **Real-Time OSINT Integration**: Automated threat intelligence gathering using APIs from **VirusTotal**, **AbuseIPDB**, **Shodan**, and **AlienVault OTX**.
-- 🤖 **AI-Powered Threat Engine**: Behavioral analysis and intelligent scoring system to categorize and prioritize critical threats dynamically.
-- 🛡️ **Role-Based Access Control (RBAC)**: Secure, multi-tier access system featuring separate privileges for **Viewers**, **Analysts**, and **Admins**.
-- 📊 **Modern SOC Dashboard**: A stunning, responsive UI featuring real-time data visualization (Chart.js), dark/light mode toggle with custom animations, and a premium glassmorphic aesthetic.
-- 🔔 **Automated Webhook Alerting**: Built-in Slack/Discord webhook integrations for instant notification of High and Critical risk alerts.
-- 📑 **Comprehensive Reporting**: Generate detailed PDF and Excel forensic reports for compliance and auditing.
+-  **Real-Time OSINT Integration**: Automated threat intelligence gathering using APIs from **VirusTotal**, **AbuseIPDB**, **Shodan**, and **AlienVault OTX**.
+-  **AI-Powered Threat Engine**: Behavioral analysis and intelligent scoring system to categorize and prioritize critical threats dynamically.
+-  **Role-Based Access Control (RBAC)**: Secure, multi-tier access system featuring separate privileges for **Viewers**, **Analysts**, and **Admins**.
+-  **Modern SOC Dashboard**: A stunning, responsive UI featuring real-time data visualization (Chart.js), dark/light mode toggle with custom animations, and a premium glassmorphic aesthetic.
+-  **Automated Webhook Alerting**: Built-in Slack/Discord webhook integrations for instant notification of High and Critical risk alerts.
+-  **Comprehensive Reporting**: Generate detailed PDF and Excel forensic reports for compliance and auditing.
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 **Backend Engine**
 - Python 3.8+
@@ -52,7 +52,7 @@ Built with a highly responsive, glassmorphic UI, robust Role-Based Access Contro
 
 ---
 
-## 🎯 Architecture & Structure
+##  Architecture & Structure
 
 The codebase is divided into clear, modular components designed for scalability:
 
@@ -71,7 +71,7 @@ OSINT-Powered-Network-Security-System/
 
 ---
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 ### 1. Clone the Repository
 ```bash
@@ -101,7 +101,7 @@ Navigate to your localhost port in any modern browser. You can test the platform
 
 ---
 
-## 📈 Platform Preview
+##  Platform Preview
 
 ### Performance & Quality Metrics
 - **Load Times:** Dashboard, Analysis, and History pages all load in under 1 second.
@@ -110,5 +110,5 @@ Navigate to your localhost port in any modern browser. You can test the platform
 
 ---
 
-## 📝 License
+##  License
 This project is open-source and available under the terms of the MIT License.
