@@ -1,0 +1,51 @@
+<!-- ================= RISK SCORE VISUALIZATION ================= -->
+<div class="panel risk-card"
+     data-score="{{ result.risk_score }}"
+     data-level="{{ result.threat }}">
+
+    <h3>Threat Score</h3>
+
+    <p class="risk-subtitle">Overall Risk Level</p>
+
+    <!-- Threat Badge -->
+    <span class="badge
+        {% if 'High' in result.threat %}high
+        {% elif 'Medium' in result.threat %}medium
+        {% else %}low{% endif %}
+    ">
+        {{ result.threat }}
+    </span>
+
+    <!-- Progress Bar -->
+    <div class="risk-bar-container">
+        <div class="risk-bar-fill"></div>
+    </div>
+
+    <p class="risk-score-text">
+        {{ result.risk_score }} / 100
+    </p>
+</div>
+
+<!-- ================= RISK BAR SCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const card = document.querySelector(".risk-card");
+    if (!card) return;
+
+    const score = parseInt(card.dataset.score || "0", 10);
+    const level = card.dataset.level || "Low Risk";
+
+    const fill = card.querySelector(".risk-bar-fill");
+    if (!fill) return;
+
+    fill.style.width = score + "%";
+
+    if (level.includes("High")) {
+        fill.style.backgroundColor = "#e74c3c";
+    } else if (level.includes("Medium")) {
+        fill.style.backgroundColor = "#f1c40f";
+    } else {
+        fill.style.backgroundColor = "#2ecc71";
+    }
+});
+</script>

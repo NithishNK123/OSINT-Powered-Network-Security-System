@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>frontend</title>
+</head>
+
+<body>
+  <div id="debug-error-log"
+    style="color: red; position: fixed; top: 0; left: 0; z-index: 99999; background: rgba(255,255,255,0.9); padding: 20px; font-family: monospace; max-height: 50vh; overflow-y: auto; pointer-events: none;">
+  </div>
+  <script>
+    window.onerror = function (message, source, lineno, colno, error) {
+      document.getElementById('debug-error-log').innerHTML += `<p><b>ERROR:</b> ${message} at ${source}:${lineno}:${colno}</p>`;
+    };
+    window.addEventListener('unhandledrejection', function (event) {
+      document.getElementById('debug-error-log').innerHTML += `<p><b>PROMISE ERROR:</b> ${event.reason}</p>`;
+    });
+    const originalConsoleError = console.error;
+    console.error = function (...args) {
+      document.getElementById('debug-error-log').innerHTML += `<p><b>CONSOLE ERROR:</b> ${args.map(a => typeof a === 'object' ? JSON.stringify(a) : a).join(' ')}</p>`;
+      originalConsoleError.apply(console, args);
+    };
+  </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

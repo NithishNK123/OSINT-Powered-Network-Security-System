@@ -1,0 +1,170 @@
+{% extends "base-new.html" %}
+
+{% block title %}History - OSINT ADVANTAGE{% endblock %}
+
+{% block content %}
+<div style="max-width: 1200px;">
+    <h1 style="font-size: 28px; font-weight: 700; margin-bottom: 30px; color: var(--text-primary);">
+        <i class="fas fa-history"></i> Scan History
+    </h1>
+
+    <!-- Filters -->
+    <div class="card" style="margin-bottom: 30px;">
+        <form method="GET" action="{{ url_for('history') }}"
+            style="display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 16px; align-items: flex-end;">
+            <!-- Search Input -->
+            <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label">Search Target</label>
+                <div style="position: relative;">
+                    <i class="fas fa-search input-icon"></i>
+                    <input type="text" name="search" class="form-input" placeholder="IP address or domain"
+                        value="{{ search or '' }}" style="padding-left: 36px;">
+                </div>
+            </div>
+
+            <!-- Risk Level Filter -->
+            <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label">Risk Level</label>
+                <select name="risk_level" class="form-select" style="cursor: pointer;">
+                    <option value="" style="color: var(--text-primary); background: var(--bg-secondary);">All Levels
+                    </option>
+                    <option value="critical" style="color: var(--text-primary); background: var(--bg-secondary);">
+                        Critical</option>
+                    <option value="high" style="color: var(--text-primary); background: var(--bg-secondary);">High
+                    </option>
+                    <option value="medium" style="color: var(--text-primary); background: var(--bg-secondary);">Medium
+                    </option>
+                    <option value="low" style="color: var(--text-primary); background: var(--bg-secondary);">Low
+                    </option>
+                </select>
+            </div>
+
+            <!-- Date Range -->
+            <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label">Date Range</label>
+                <select name="date_range" class="form-select" style="cursor: pointer;">
+                    <option value="all" style="color: var(--text-primary); background: var(--bg-secondary);">All Time
+                    </option>
+                    <option value="today" style="color: var(--text-primary); background: var(--bg-secondary);">Today
+                    </option>
+                    <option value="week" style="color: var(--text-primary); background: var(--bg-secondary);">Last 7
+                        Days</option>
+                    <option value="month" style="color: var(--text-primary); background: var(--bg-secondary);">Last 30
+                        Days</option>
+                </select>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary" style="min-width: 100px;">
+                <i class="fas fa-filter"></i> Filter
+            </button>
+        </form>
+    </div>
+
+    <!-- Results Summary -->
+    <div style="margin-bottom: 20px;">
+        <p style="font-size: 13px; color: var(--text-secondary);">
+            {% if search or risk_level %}
+            Showing filtered results ({{ total_results }} matches)
+            {% else %}
+            Showing all {{ total_results }} scans
+            {% endif %}
+        </p>
+    </div>
+
+    <!-- Scans Table -->
+    <div class="card">
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">Target</th>
+                    <th style="width: 20%;">Risk Level</th>
+                    <th style="width: 25%;">Timestamp</th>
+                    <th style="width: 15%;">Score</th>
+                    <th style="width: 10%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for scan in scans %}
+                <tr>
+                    <td style="font-family: 'Courier New', monospace; font-weight: 600;">
+                        {{ scan.target }}
+                    </td>
+                    <td>
+                        {% if scan.risk_level == 'Critical' %}
+                        <span class="badge badge-critical">
+                            <i class="fas fa-exclamation-triangle"></i> {{ scan.risk_level }}
+                        </span>
+                        {% elif scan.risk_level == 'High' %}
+                        <span class="badge badge-high">
+                            <i class="fas fa-alert"></i> {{ scan.risk_level }}
+                        </span>
+                        {% elif scan.risk_level == 'Medium' %}
+                        <span class="badge badge-medium">
+                            <i class="fas fa-info-circle"></i> {{ scan.risk_level }}
+                        </span>
+                        {% else %}
+                        <span class="badge badge-low">
+                            <i class="fas fa-check-circle"></i> {{ scan.risk_level }}
+                        </span>
+                        {% endif %}
+                    </td>
+                    <td style="font-size: 12px; color: var(--text-muted);">
+                        {{ scan.timestamp }}
+                    </td>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <div
+                                style="width: 60px; height: 6px; background: rgba(59, 130, 246, 0.1); border-radius: 3px; overflow: hidden;">
+                                {% if scan.score >= 70 %}
+                                <div data-score="{{ scan.score }}" class="progress-bar-high"></div>
+                                {% elif scan.score >= 40 %}
+                                <div data-score="{{ scan.score }}" class="progress-bar-medium"></div>
+                                {% else %}
+                                <div data-score="{{ scan.score }}" class="progress-bar-low"></div>
+                                {% endif %}
+                            </div>
+                            <span style="font-weight: 600; font-size: 12px; min-width: 30px;">{{ scan.score }}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="{{ url_for('analyze', target=scan.target) }}" class="btn btn-secondary btn-icon"
+                            title="Analyze">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        {% if pages > 1 %}
+        <div
+            style="display: flex; justify-content: center; gap: 8px; padding: 20px; border-top: 1px solid var(--card-border);">
+            {% for page_num in range(1, pages + 1) %}
+            {% if page_num == current_page %}
+            <button class="btn btn-primary btn-sm" disabled>{{ page_num }}</button>
+            {% else %}
+            <a href="{{ url_for('history', page=page_num, search=search, risk_level=risk_level) }}"
+                class="btn btn-secondary btn-sm">
+                {{ page_num }}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endblock %}
+
+    {% block page_script %}
+<script>
+// Apply progress bar widths from data attributes
+    document.querySelectorAll('[data-score]').forEach(bar => {
+    const score = bar.getAttribute('data-score');
+    if (score) {
+    bar.style.width = score + '%';
+    }
+    });
+</script>
+{% endblock %}

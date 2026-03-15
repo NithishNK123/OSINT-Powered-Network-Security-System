@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block title %}Analyze IP / Domain{% endblock %}
+
+{% block content %}
+
+<!-- ================= ANALYZE INPUT ================= -->
+<div class="panel">
+    <h3>Analyze IP or Domain</h3>
+
+    <form method="POST" action="/analyze">
+        <input
+            type="text"
+            name="input"
+            placeholder="Enter IP address or domain (e.g. 8.8.8.8)"
+            required
+        >
+        <button type="submit">🔍 Analyze</button>
+    </form>
+</div>
+
+{% if result %}
+
+<!-- ================= TOP GRID ================= -->
+<div class="analyze-grid">
+
+    <!-- LEFT: ANALYSIS DETAILS -->
+    <div class="panel">
+        <h3>Analysis Result</h3>
+
+        <p><b>Target:</b> {{ result.ip }}</p>
+
+        <p>
+            <b>Threat Level:</b>
+            <span class="badge
+                {% if 'High' in result.threat %}high
+                {% elif 'Medium' in result.threat %}medium
+                {% else %}low{% endif %}
+            ">
+                {{ result.threat }}
+            </span>
+        </p>
+
+        <p><b>Threat Type:</b> {{ result.type }}</p>
+        <p><b>Recommendation:</b> {{ result.suggestion }}</p>
+
+        <p>
+            <b>Open Ports:</b>
+            {% if result.shodan.open_ports %}
+                {{ result.shodan.open_ports | join(', ') }}
+            {% else %}
+                None
+            {% endif %}
+        </p>
+
+        <div class="actions">
+            <a href="/export/pdf">📄 Download PDF</a>
+            <a href="/export/excel">📊 Download Excel</a>
+        </div>
+    </div>
+
+    <!-- RIGHT: THREAT SCORE VISUALIZATION -->
+    <div class="panel">
+        <h3>Threat Score</h3>
+
+        <!-- 🔐 SAFE DATA PASSING -->
+        <div id="riskData"
+             data-score="{{ result.risk_score }}">
+        </div>
+
+        <canvas id="riskChart" height="220"></canvas>
+
+        <p style="text-align:center;color:#9aa4bf;">
+            Risk Score: <strong>{{ result.risk_score }}</strong> / 100
+        </p>
+    </div>
+
+</div>
+
+<!-- ================= BOTTOM GRID ================= -->
+<div class="analyze-grid-bottom">
+
+    <!-- OPEN PORTS RISK TABLE -->
+    <div class="panel">
+        <h3>Open Ports Risk</h3>
+
+        {% if result.shodan.open_ports %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Service</th>
+                    <th>Risk</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for port in result.shodan.open_ports %}
+                <tr>
+                    <td>{{ port }}</td>
+                    <td>
+                        {% if port == 21 %}FTP
+                        {% elif port == 22 %}SSH
+                        {% elif port == 23 %}Telnet
+                        {% elif port == 80 %}HTTP
+                        {% elif port == 443 %}HTTPS
+                        {% else %}Unknown{% endif %}
+                    </td>
+                    <td>
+                        {% if port in [21, 23] %}
+                            <span class="badge high">High</span>
+                        {% elif port == 22 %}
+                            <span class="badge medium">Medium</span>
+                        {% else %}
+                            <span class="badge low">Low</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <p style="color:#9aa4bf;">No open ports detected.</p>
+        {% endif %}
+    </div>
+
+    <!-- AI THREAT EXPLANATION -->
+    <div class="panel ai-box">
+        <h3>🧠 AI Threat Intelligence</h3>
+
+        <p style="line-height:1.6;">
+            {{ result.ai }}
+        </p>
+
+        <small style="color:#9aa4bf;">
+            Generated using VirusTotal, AbuseIPDB & behavioral analysis.
+        </small>
+    </div>
+
+</div>
+
+<!-- ================= CHART.JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const dataEl = document.getElementById("riskData");
+    if (!dataEl) return;
+
+    const score = parseInt(dataEl.dataset.score || "0", 10);
+
+    const ctx = document.getElementById("riskChart");
+    if (!ctx) return;
+
+    new Chart(ctx, {
+        type: "doughnut",
+        data: {
+            datasets: [{
+                data: [score, 100 - score],
+                backgroundColor: [
+                    score >= 70 ? "#ef4444" :
+                    score >= 40 ? "#facc15" : "#22c55e",
+                    "#1f2937"
+                ],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            cutout: "75%",
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+});
+</script>
+
+{% endif %}
+
+{% endblock %}

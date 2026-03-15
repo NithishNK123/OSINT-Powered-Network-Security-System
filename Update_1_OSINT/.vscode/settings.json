@@ -1,0 +1,16 @@
+{
+  "html.validate.styles": false,
+  "css.validate": false,
+  "html.validate.scripts": false,
+  "[html]": {
+    "editor.defaultFormatter": null
+  },
+  "[jinja]": {
+    "editor.defaultFormatter": null
+  },
+  "files.associations": {
+    "*.html": "html"
+  },
+  "html.format.enable": false,
+  "editor.formatOnSave": false
+}

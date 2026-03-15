@@ -1,0 +1,152 @@
+{% extends "base-new.html" %}
+
+{% block title %}Campaigns - OSINT ADVANTAGE{% endblock %}
+
+{% block content %}
+<div style="max-width: 1200px; margin: 0 auto;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px;">
+        <div>
+            <h1 style="font-size: 28px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">
+                <i class="fas fa-project-diagram"></i> Threat Campaigns
+            </h1>
+            <p style="color: var(--text-secondary); margin: 0;">Link Analysis & IoC Tracking</p>
+        </div>
+        <button class="btn btn-primary">
+            <i class="fas fa-plus"></i> New Campaign
+        </button>
+    </div>
+
+    <!-- Campaigns List -->
+    <div class="grid grid-3" style="margin-bottom: 40px;">
+        {% for camp in campaigns %}
+        <div class="card" style="cursor: pointer; transition: transform 0.2s;"
+            onclick="loadGraph({{ camp.id }}, '{{ camp.name }}')">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h3 style="margin: 0; font-size: 16px; color: var(--text-primary);">{{ camp.name }}</h3>
+                <span class="badge badge-high" style="font-size: 11px;">{{ camp.watchlist_count }} IoCs</span>
+            </div>
+            <p style="font-size: 13px; color: var(--text-secondary); margin: 0 0 16px 0; line-height: 1.5;">
+                {{ camp.description }}
+            </p>
+            <div style="font-size: 11px; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
+                <i class="far fa-clock"></i> Created: {{ camp.created_at[:10] }}
+            </div>
+        </div>
+        {% else %}
+        <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-muted);">
+            <i class="fas fa-folder-open" style="font-size: 48px; margin-bottom: 16px; opacity: 0.5;"></i>
+            <p>No campaigns tracked yet. Start monitoring advanced threats.</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Graph Visualization -->
+    <div class="card" style="height: 600px; display: flex; flex-direction: column;">
+        <div class="card-header" style="flex-shrink: 0;">
+            <div class="card-title" id="graph-title">
+                <i class="fas fa-network-wired"></i> IoC Graph Network
+            </div>
+            <div style="font-size: 11px; color: var(--text-muted);">Select a campaign above to view related indicators
+            </div>
+        </div>
+        <div id="cy"
+            style="flex: 1; width: 100%; height: 100%; background: var(--bg-primary); border-radius: 0 0 12px 12px;">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block page_script %}
+<!-- Load Cytoscape -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+<script>
+    let cy;
+
+    function initCytoscape(elements) {
+        const isLightMode = document.body.classList.contains('light-mode');
+        const textColor = isLightMode ? '#1e293b' : '#f8fafc';
+        const nodeColor = isLightMode ? '#3b82f6' : '#60a5fa';
+        const edgeColor = isLightMode ? '#cbd5e1' : '#334155';
+
+        cy = cytoscape({
+            container: document.getElementById('cy'),
+            elements: elements,
+            style: [
+                {
+                    selector: 'node',
+                    style: {
+                        'background-color': nodeColor,
+                        'label': 'data(label)',
+                        'color': textColor,
+                        'font-size': '12px',
+                        'text-valign': 'bottom',
+                        'text-margin-y': '5px',
+                        'width': 30,
+                        'height': 30
+                    }
+                },
+                {
+                    selector: 'node[type="campaign"]',
+                    style: {
+                        'background-color': '#8b5cf6', // purple
+                        'shape': 'hexagon',
+                        'width': 50,
+                        'height': 50,
+                        'font-weight': 'bold',
+                        'font-size': '14px'
+                    }
+                },
+                {
+                    selector: 'node[type="port"]',
+                    style: {
+                        'background-color': '#10b981', // green
+                        'shape': 'triangle',
+                        'width': 20,
+                        'height': 20,
+                        'font-size': '10px'
+                    }
+                },
+                {
+                    selector: 'edge',
+                    style: {
+                        'width': 2,
+                        'line-color': edgeColor,
+                        'target-arrow-color': edgeColor,
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier'
+                    }
+                }
+            ],
+            layout: {
+                name: 'cose', // Force-directed layout
+                padding: 50,
+                animate: true,
+                animationDuration: 500
+            }
+        });
+    }
+
+    async function loadGraph(campaignId, campaignName) {
+        document.getElementById('graph-title').innerHTML = `<i class="fas fa-network-wired"></i> Graphing: ${campaignName}`;
+
+        try {
+            const response = await fetch(`/api/graph_data/${campaignId}`);
+            const data = await response.json();
+
+            if (cy) {
+                cy.destroy();
+            }
+
+            if (data.elements && data.elements.length > 0) {
+                initCytoscape(data.elements);
+            } else {
+                document.getElementById('cy').innerHTML = '<div style="display:flex; height:100%; align-items:center; justify-content:center; color:var(--text-muted);">No indicators linked to this campaign.</div>';
+                cy = null;
+            }
+        } catch (error) {
+            console.error('Error loading graph:', error);
+            document.getElementById('cy').innerHTML = '<div style="display:flex; height:100%; align-items:center; justify-content:center; color:#ef4444;">Error loading graph data.</div>';
+        }
+    }
+</script>
+{% endblock %}

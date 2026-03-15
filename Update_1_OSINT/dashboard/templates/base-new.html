@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}OSINT ADVANTAGE - Threat Intelligence Platform{% endblock %}</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/soc.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern-soc.css') }}">
+
+    <!-- Additional Styles - Extended by child templates -->
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    <!-- Theme Transition Overlay -->
+    <div class="theme-transition-overlay" id="themeOverlay">
+        <div class="wave-layer wave-layer-1"></div>
+        <div class="wave-layer wave-layer-2"></div>
+        <div class="wave-layer wave-layer-3"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div></div>
+        <div class="header-center">Threat Intelligence Platform</div>
+        <div class="header-right">
+            <div class="user-profile" onclick="toggleUserMenu()">
+                <div class="user-avatar role-{% if session.user %}{{ session.user.role }}{% else %}viewer{% endif %}">
+                    {{ (session.user.name if session.user else 'U')[0] }}
+                </div>
+                <div class="user-info">
+                    <div class="user-name">{{ session.user.name if session.user else 'User' }}</div>
+                    <div class="user-role">
+                        {% if session.user.role == 'admin' %}Administrator
+                        {% elif session.user.role == 'analyst' %}SOC Analyst
+                        {% else %}Viewer{% endif %}
+                    </div>
+                </div>
+            </div>
+            <a href="{{ url_for('logout') }}" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <nav class="nav-section">
+            <!-- Dashboard - Available to all -->
+            <a href="{{ url_for('index') }}" class="nav-item {% if request.endpoint == 'index' %}active{% endif %}">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <!-- Analyze - Available to Analyst & Admin -->
+            {% if session.user.role in ['analyst', 'admin'] %}
+            <a href="{{ url_for('analyze') }}" class="nav-item {% if request.endpoint == 'analyze' %}active{% endif %}">
+                <i class="fas fa-search"></i>
+                <span>Analyze</span>
+            </a>
+            {% endif %}
+
+            <!-- Alerts - Available to Analyst & Admin -->
+            {% if session.user.role in ['analyst', 'admin'] %}
+            <a href="{{ url_for('alerts') }}" class="nav-item {% if request.endpoint == 'alerts' %}active{% endif %}">
+                <i class="fas fa-bell"></i>
+                <span>Alerts</span>
+            </a>
+            {% endif %}
+
+            <!-- History - Available to Analyst & Admin -->
+            {% if session.user.role in ['analyst', 'admin'] %}
+            <a href="{{ url_for('history') }}" class="nav-item {% if request.endpoint == 'history' %}active{% endif %}">
+                <i class="fas fa-history"></i>
+                <span>History</span>
+            </a>
+
+            <a href="{{ url_for('campaigns') }}"
+                class="nav-item {% if request.endpoint == 'campaigns' %}active{% endif %}">
+                <i class="fas fa-project-diagram"></i>
+                <span>Campaigns</span>
+            </a>
+            {% endif %}
+
+            <!-- Reports - Available to Analyst & Admin -->
+            {% if session.user.role in ['analyst', 'admin'] %}
+            <a href="{{ url_for('reports') }}" class="nav-item {% if request.endpoint == 'reports' %}active{% endif %}">
+                <i class="fas fa-file-pdf"></i>
+                <span>Reports</span>
+            </a>
+            {% endif %}
+
+            <!-- Settings - Admin only -->
+            {% if session.user.role == 'admin' %}
+            <a href="{{ url_for('settings') }}"
+                class="nav-item {% if request.endpoint == 'settings' %}active{% endif %}">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+            {% endif %}
+        </nav>
+
+        <!-- Access Level Card -->
+        <div class="access-level">
+            <div class="access-level-title">Access Level</div>
+            <div class="access-level-text">
+                {% if session.user.role == 'admin' %}
+                <span style="color: var(--accent-purple)">●</span>Full Access
+                {% elif session.user.role == 'analyst' %}
+                <span style="color: var(--accent-blue)">●</span>Analysis Access
+                {% else %}
+                <span style="color: var(--accent-green)">●</span>View Only
+                {% endif %}
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+
+    <script>
+        // ========== THEME MANAGEMENT ==========
+        const THEME_STORAGE_KEY = 'oscint-theme-mode';
+
+        function getCurrentTheme() {
+            const stored = localStorage.getItem(THEME_STORAGE_KEY);
+            if (stored) return stored;
+
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            return prefersDark ? 'dark' : 'light';
+        }
+
+        function setTheme(theme) {
+            const body = document.body;
+
+            if (theme === 'light') {
+                body.classList.add('light-mode');
+            } else {
+                body.classList.remove('light-mode');
+            }
+
+            localStorage.setItem(THEME_STORAGE_KEY, theme);
+        }
+
+        function toggleThemeWithAnimation() {
+            const body = document.body;
+            const overlay = document.getElementById('themeOverlay');
+            const isLightMode = body.classList.contains('light-mode');
+            const newTheme = isLightMode ? 'dark' : 'light';
+
+            // Start animation
+            overlay.classList.add('active');
+
+            // Change theme mid-animation
+            setTimeout(() => {
+                setTheme(newTheme);
+                overlay.classList.remove('active');
+            }, 800);
+        }
+
+        // ========== ANIMATED NUMBER COUNTERS ==========
+        function animateNumbers() {
+            const elements = document.querySelectorAll('.animate-number');
+            elements.forEach(el => {
+                // If it contains a decimal or isn't a pure number, skip or handle differently
+                const text = el.innerText.trim();
+                const isFloat = text.includes('.');
+                const target = isFloat ? parseFloat(text) : parseInt(text.replace(/,/g, ''), 10);
+
+                if (isNaN(target)) return;
+
+                const duration = 1500; // ms
+                const steps = 60;
+                const stepTime = Math.abs(Math.floor(duration / steps));
+                let current = 0;
+                const increment = target / steps;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        el.innerText = isFloat ? target.toFixed(1) : target.toLocaleString();
+                        clearInterval(timer);
+                    } else {
+                        el.innerText = isFloat ? current.toFixed(1) : Math.floor(current).toLocaleString();
+                    }
+                }, stepTime);
+            });
+        }
+
+        // ========== COMMAND PALETTE ==========
+        const cmdPalette = document.createElement('div');
+        cmdPalette.id = 'commandPalette';
+        cmdPalette.className = 'cmd-palette-overlay';
+        cmdPalette.innerHTML = `
+            <div class="cmd-palette-modal">
+                <div class="cmd-input-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="cmdInput" placeholder="Type a command or target to analyze (e.g. 8.8.8.8)..." autocomplete="off">
+                </div>
+                <div class="cmd-results" id="cmdResults">
+                    <div class="cmd-section">Navigation</div>
+                    <a href="{{ url_for('index') }}" class="cmd-item"><i class="fas fa-chart-line"></i> Dashboard</a>
+                    <a href="{{ url_for('analyze') }}" class="cmd-item"><i class="fas fa-search"></i> Analyze</a>
+                    <a href="{{ url_for('alerts') }}" class="cmd-item"><i class="fas fa-bell"></i> Alerts</a>
+                    <a href="{{ url_for('history') }}" class="cmd-item"><i class="fas fa-history"></i> History</a>
+                    <a href="{{ url_for('reports') }}" class="cmd-item"><i class="fas fa-file-pdf"></i> Reports</a>
+                    <a href="{{ url_for('settings') }}" class="cmd-item"><i class="fas fa-cog"></i> Settings</a>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(cmdPalette);
+
+        const cmdInput = document.getElementById('cmdInput');
+        const cmdOverlay = document.getElementById('commandPalette');
+
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                cmdOverlay.classList.toggle('active');
+                if (cmdOverlay.classList.contains('active')) {
+                    cmdInput.focus();
+                }
+            }
+            if (e.key === 'Escape' && cmdOverlay.classList.contains('active')) {
+                cmdOverlay.classList.remove('active');
+            }
+        });
+
+        cmdOverlay.addEventListener('click', (e) => {
+            if (e.target === cmdOverlay) {
+                cmdOverlay.classList.remove('active');
+            }
+        });
+
+        cmdInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const val = cmdInput.value.trim();
+                if (val && !val.startsWith('http')) {
+                    // Navigate to analyze page with target
+                    window.location.href = "{{ url_for('analyze') }}?target=" + encodeURIComponent(val);
+                }
+            }
+        });
+
+        // Initialize theme and animations on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            setTheme(getCurrentTheme());
+            setTimeout(animateNumbers, 300); // Delay slightly for CSS animations to start
+        });
+
+        // ========== USER MENU ==========
+        function toggleUserMenu() {
+            console.log('User menu toggle');
+        }
+    </script>
+
+    <!-- Page Initialization - Extended by child templates -->
+    {% block page_script %}{% endblock %}
+</body>
+
+</html>

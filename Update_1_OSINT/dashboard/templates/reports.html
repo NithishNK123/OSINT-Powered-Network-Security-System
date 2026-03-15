@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Reports{% endblock %}
+
+{% block content %}
+
+<!-- ================= PAGE HEADER ================= -->
+<div class="panel">
+    <h3>Reports & Intelligence Exports</h3>
+    <p style="color:#9aa4bf;font-size:14px;">
+        Generate professional SOC reports from analyzed OSINT data
+    </p>
+</div>
+
+<!-- ================= REPORT SUMMARY ================= -->
+<div class="cards">
+    <div class="card">
+        <h4>Total Analyses</h4>
+        <p>{{ summary.total }}</p>
+    </div>
+
+    <div class="card high">
+        <h4>High Risk Findings</h4>
+        <p>{{ summary.high }}</p>
+    </div>
+
+    <div class="card medium">
+        <h4>Medium Risk Findings</h4>
+        <p>{{ summary.medium }}</p>
+    </div>
+
+    <div class="card low">
+        <h4>Low Risk Findings</h4>
+        <p>{{ summary.low }}</p>
+    </div>
+</div>
+
+<!-- ================= EXPORT ACTIONS ================= -->
+<div class="panel">
+    <h3>Export Reports</h3>
+
+    <div class="actions">
+        <a href="{{ url_for('export_pdf') }}">
+            📄 Download PDF Report
+        </a>
+
+        <a href="{{ url_for('export_excel') }}">
+            📊 Download Excel Report
+        </a>
+    </div>
+
+    <p style="margin-top:12px;color:#9aa4bf;font-size:13px;">
+        Reports include threat scoring, abuse metrics, open ports,
+        AI explanations, and timestamps.
+    </p>
+</div>
+
+<!-- ================= REPORT CONTENT PREVIEW ================= -->
+<div class="panel">
+    <h3>Recent Report Entries</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>IP / Domain</th>
+                <th>Threat Level</th>
+                <th>Threat Type</th>
+                <th>Abuse Score</th>
+                <th>Open Ports</th>
+                <th>Analyzed At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in history[:10] %}
+            <tr>
+                <td>{{ loop.index }}</td>
+
+                <!-- ✅ FIXED HERE -->
+                <td>{{ row.target }}</td>
+
+                <td>
+                    <span class="badge {{ row.threat_level|lower|replace(' ', '-') }}">
+                        {{ row.threat_level }}
+                    </span>
+                </td>
+
+                <td>{{ row.threat_type }}</td>
+                <td>{{ row.abuse_score }}</td>
+
+                <td>
+                    {% if row.open_ports %}
+                        {{ row.open_ports }}
+                    {% else %}
+                        None
+                    {% endif %}
+                </td>
+
+                <td>{{ row.created_at }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="7" style="text-align:center;color:#9aa4bf;">
+                    No report data available
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- ================= AI REPORT NOTE ================= -->
+<div class="ai-box">
+    <strong>AI Report Intelligence</strong><br>
+    Each report is enriched with AI-assisted explanations describing
+    why an IP or domain is risky, helping SOC analysts make faster decisions.
+</div>
+
+{% endblock %}

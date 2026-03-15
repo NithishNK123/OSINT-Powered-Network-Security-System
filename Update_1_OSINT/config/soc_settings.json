@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "created_at": null,
+    "updated_at": "2026-03-03T12:13:54.794144",
+    "version": "1.0"
+  },
+  "thresholds": {
+    "low_max": 39,
+    "medium_max": 69,
+    "high_min": 70
+  },
+  "engines": {
+    "virustotal": true,
+    "abuseipdb": true,
+    "shodan": true
+  },
+  "alert_settings": {
+    "enabled": true,
+    "keep_last_n": 10,
+    "trigger_on_high_risk_only": true
+  },
+  "automation": {
+    "auto_monitor_enabled": false,
+    "scan_interval_seconds": 300,
+    "monitored_targets": []
+  },
+  "notifications": {
+    "email_alerts": false,
+    "slack_webhook": "https://hooks.slack.com/services/YOUR_WORKSPACE/YOUR_CHANNEL/YOUR_TOKEN",
+    "telegram_token": null,
+    "admin_email": "nithishkumarnkl2005@gmail.com",
+    "email_enabled": true
+  }
+}

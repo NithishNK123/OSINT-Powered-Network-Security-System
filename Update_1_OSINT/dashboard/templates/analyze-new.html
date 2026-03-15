@@ -1,0 +1,333 @@
+{% extends "base-new.html" %}
+
+{% block title %}Analyze - OSINT ADVANTAGE{% endblock %}
+
+{% block content %}
+<div style="max-width: 1200px;">
+    <h1 style="font-size: 28px; font-weight: 700; margin-bottom: 30px; color: var(--text-primary);">
+        <i class="fas fa-search"></i> Threat Analysis
+    </h1>
+
+    <!-- Search Section -->
+    <div class="card" style="margin-bottom: 40px;">
+        <form method="POST" action="{{ url_for('analyze') }}" style="display: flex; gap: 12px;">
+            <div style="flex: 1;">
+                <input type="text" name="target" class="form-input"
+                    placeholder="Enter IP address or domain (e.g., 192.168.1.1 or malicious.com)"
+                    value="{{ target or '' }}" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="min-width: 140px;">
+                <i class="fas fa-search"></i> Analyze
+            </button>
+        </form>
+    </div>
+
+    {% if error %}
+    <div
+        style="padding: 16px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; color: #ef4444; margin-bottom: 24px;">
+        <i class="fas fa-exclamation-circle"></i> {{ error }}
+    </div>
+    {% endif %}
+
+    {% if target and result %}
+    <!-- Analysis Results Layout -->
+    <div class="grid grid-2">
+        <!-- LEFT COLUMN: Analysis Results -->
+        <div>
+            <!-- Result Card -->
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="card-header">
+                    <div class="card-title">Analysis Result</div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <!-- Target Info -->
+                    <div style="padding-bottom: 16px; border-bottom: 1px solid var(--card-border);">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">
+                            Target</div>
+                        <div
+                            style="font-size: 16px; font-weight: 700; color: var(--text-primary); font-family: 'Courier New', monospace;">
+                            {{ target }}
+                        </div>
+                    </div>
+
+                    <!-- Threat Level Badge -->
+                    <div style="margin: 20px 0;">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">
+                            Threat Level</div>
+                        <div>
+                            {% if result.level == 'High Risk' %}
+                            <span class="badge badge-critical" style="padding: 8px 14px; font-size: 13px;">
+                                <i class="fas fa-exclamation-triangle"></i> CRITICAL
+                            </span>
+                            {% elif result.level == 'Medium Risk' %}
+                            <span class="badge badge-high" style="padding: 8px 14px; font-size: 13px;">
+                                <i class="fas fa-alert"></i> HIGH RISK
+                            </span>
+                            {% else %}
+                            <span class="badge badge-medium" style="padding: 8px 14px; font-size: 13px;">
+                                <i class="fas fa-info-circle"></i> LOW RISK
+                            </span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Threat Type -->
+                    <div
+                        style="padding: 16px 0; border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border);">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">
+                            Threat Type</div>
+                        <div style="font-size: 14px; font-weight: 600; color: var(--text-primary);">
+                            {{ result.type }}
+                        </div>
+                    </div>
+
+                    <!-- Recommendation -->
+                    <div style="margin-top: 16px;">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">
+                            Recommendation</div>
+                        <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+                            {{ result.suggestion }}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Export Buttons -->
+                <div
+                    style="display: flex; gap: 12px; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--card-border);">
+                    <a href="{{ url_for('export_pdf', target=target) }}" class="btn btn-secondary"
+                        style="flex: 1; justify-content: center;">
+                        <i class="fas fa-file-pdf"></i> Export PDF
+                    </a>
+                    <a href="{{ url_for('export_excel', target=target) }}" class="btn btn-secondary"
+                        style="flex: 1; justify-content: center;">
+                        <i class="fas fa-file-excel"></i> Export Excel
+                    </a>
+                </div>
+            </div>
+
+            <!-- Detailed Signals -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Detection Signals</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <div
+                        style="padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 6px; margin-bottom: 12px;">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">
+                            VirusTotal Hits</div>
+                        <div style="font-size: 18px; font-weight: 700; color: var(--accent-blue);">
+                            {{ result.signals.vt_hits }}/89
+                        </div>
+                    </div>
+                    <div
+                        style="padding: 12px; background: rgba(139, 92, 246, 0.05); border-radius: 6px; margin-bottom: 12px;">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">
+                            AbuseIPDB Score</div>
+                        <div style="font-size: 18px; font-weight: 700; color: var(--accent-purple);">
+                            {{ result.signals.abuse_score }}/100
+                        </div>
+                    </div>
+                    <div style="padding: 12px; background: rgba(6, 182, 212, 0.05); border-radius: 6px;">
+                        <div
+                            style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 4px;">
+                            Open Ports</div>
+                        <div style="font-size: 18px; font-weight: 700; color: var(--accent-cyan);">
+                            {{ result.signals.open_ports }} ports
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Score Visualization -->
+        <div>
+            <!-- Risk Score Card -->
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="card-header">
+                    <div class="card-title">Risk Score</div>
+                </div>
+
+                <div
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;">
+                    <!-- Circular Progress -->
+                    <div style="position: relative; width: 200px; height: 200px; margin-bottom: 20px;">
+                        <svg viewBox="0 0 100 100" style="transform: rotate(-90deg); width: 100%; height: 100%;">
+                            <!-- Background circle -->
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(59, 130, 246, 0.1)"
+                                stroke-width="8"></circle>
+                            <!-- Progress circle - color based on score -->
+                            <circle cx="50" cy="50" r="45" fill="none"
+                                stroke="{% if result.score >= 70 %}#ef4444{% elif result.score >= 40 %}#f97316{% else %}#10b981{% endif %}"
+                                stroke-width="8" stroke-dasharray="{{ result.score * 2.83 }} 283"
+                                stroke-linecap="round"></circle>
+                        </svg>
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                            <div style="font-size: 48px; font-weight: 700; color: var(--text-primary);">
+                                {{ result.score | round | int }}
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">/ 100</div>
+                        </div>
+                    </div>
+
+                    <!-- Score Level Label -->
+                    <div style="text-align: center;">
+                        {% if result.score >= 70 %}
+                        <div style="font-size: 14px; font-weight: 700; color: #ef4444;">CRITICAL THREAT</div>
+                        {% elif result.score >= 40 %}
+                        <div style="font-size: 14px; font-weight: 700; color: #f97316;">HIGH RISK</div>
+                        {% else %}
+                        <div style="font-size: 14px; font-weight: 700; color: #10b981;">LOW RISK</div>
+                        {% endif %}
+                        <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                            {% if result.alert %}Alert Triggered{% else %}No Alert{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mitigation Playbook -->
+            <div class="card" style="border-left: 3px solid var(--accent-purple);">
+                <div class="card-header">
+                    <div class="card-title">
+                        <i class="fas fa-terminal"></i> Agentic AI Mitigation Playbook
+                    </div>
+                </div>
+                <!-- Playbook Content -->
+                <div id="ai-playbook-container" style="margin-top: 16px;">
+                    <div id="ai-loading" style="padding: 20px; text-align: center; color: var(--text-muted);">
+                        <i class="fas fa-circle-notch fa-spin"></i> Generating custom defense playbook...
+                    </div>
+                    <div id="ai-content"
+                        style="display: none; padding: 16px; background: rgba(139, 92, 246, 0.05); border-radius: 8px; font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Ports Section -->
+    {% if result.signals.open_ports > 0 %}
+    <div class="card" style="margin-top: 40px;">
+        <div class="card-header">
+            <div class="card-title">Open Ports Analysis</div>
+        </div>
+        <table class="stats-table" style="margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Service</th>
+                    <th>Risk Level</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-family: monospace; font-weight: 600;">22</td>
+                    <td>SSH</td>
+                    <td><span class="badge badge-high">High</span></td>
+                    <td><i class="fas fa-check-circle" style="color: #10b981;"></i></td>
+                </tr>
+                <tr>
+                    <td style="font-family: monospace; font-weight: 600;">80</td>
+                    <td>HTTP</td>
+                    <td><span class="badge badge-medium">Medium</span></td>
+                    <td><i class="fas fa-check-circle" style="color: #10b981;"></i></td>
+                </tr>
+                <tr>
+                    <td style="font-family: monospace; font-weight: 600;">443</td>
+                    <td>HTTPS</td>
+                    <td><span class="badge badge-low">Low</span></td>
+                    <td><i class="fas fa-check-circle" style="color: #10b981;"></i></td>
+                </tr>
+                <tr>
+                    <td style="font-family: monospace; font-weight: 600;">3389</td>
+                    <td>RDP</td>
+                    <td><span class="badge badge-critical">Critical</span></td>
+                    <td><i class="fas fa-check-circle" style="color: #ef4444;"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    {% else %}
+    <!-- Empty State -->
+    <div style="text-align: center; padding: 60px 20px;">
+        <i class="fas fa-search"
+            style="font-size: 64px; color: var(--accent-blue); opacity: 0.5; margin-bottom: 20px; display: block;"></i>
+        <h2 style="font-size: 24px; font-weight: 700; color: var(--text-primary); margin-bottom: 10px;">
+            No Analysis Yet
+        </h2>
+        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 30px;">
+            Enter an IP address or domain above to begin threat analysis
+        </p>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}
+
+{% block page_script %}
+<script>
+    // Auto-focus input
+    document.addEventListener('DOMContentLoaded', function () {
+        const input = document.querySelector('[name="target"]');
+        if (input && !input.value) {
+            input.focus();
+        }
+    });
+
+    {% if target and result %}
+    // Fetch AI Playbook
+    document.addEventListener('DOMContentLoaded', async function () {
+        try {
+            const response = await fetch('{{ url_for("api_ai_playbook") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    target: "{{ target }}",
+                    level: "{{ result.level }}",
+                    vt_hits: {{ result.signals.vt_hits | default(0) }},
+                abuse_score: {{ result.signals.abuse_score | default(0) }},
+        ports: { { result.ports | default ([]) | tojson } },
+        god_mode: { { result.god_mode | default ({}) | tojson } }
+    })
+});
+
+    const data = await response.json();
+    const contentDiv = document.getElementById('ai-content');
+    const loadingDiv = document.getElementById('ai-loading');
+
+    loadingDiv.style.display = 'none';
+    contentDiv.style.display = 'block';
+
+    if (data.playbook) {
+        // Very simple markdown parser for the playbook
+        let html = data.playbook
+            .replace(/```bash\n([\s\S]*?)```/g, `<div style="background: #1e1e1e; color: #d4d4d4; padding: 12px; border-radius: 6px; font-family: monospace; overflow-x: auto; margin-top: 10px; margin-bottom: 10px;">$1</div>`)
+            .replace(/\n\n/g, '<br><br>');
+        contentDiv.innerHTML = html;
+    } else {
+        contentDiv.innerHTML = 'Error generating playbook.';
+    }
+} catch (error) {
+        document.getElementById('ai-loading').style.display = 'none';
+        const contentDiv = document.getElementById('ai-content');
+        contentDiv.style.display = 'block';
+        contentDiv.innerHTML = 'Failed to load mitigation playbook. Please check API settings.';
+        console.error('Playbook error:', error);
+    }
+});
+    {% endif %}
+</script>
+{% endblock %}

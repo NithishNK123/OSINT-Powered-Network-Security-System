@@ -1,0 +1,6 @@
+/* 
+ * Main entry point for styles.
+ * All styles are managed through the styles directory using Tailwind CSS v4.
+ * This file re-exports from the structured styles directory.
+ */
+@import './styles/index.css';

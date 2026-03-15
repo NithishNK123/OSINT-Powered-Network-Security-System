@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}Analysis History{% endblock %}
+
+{% block content %}
+
+<!-- ================= PAGE HEADER ================= -->
+<div class="panel">
+    <h3>Analysis History</h3>
+    <p style="color:#9aa4bf; font-size:14px;">
+        Search, filter, and review previously analyzed IPs / domains
+    </p>
+</div>
+
+<!-- ================= FILTER BAR ================= -->
+<div class="panel">
+    <form method="get" action="{{ url_for('history') }}" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+
+        <!-- Search -->
+        <input type="text"
+               name="q"
+               placeholder="Search IP / Domain"
+               value="{{ request.args.get('q','') }}">
+
+        <!-- Risk Filter -->
+        <select name="risk"
+                style="padding:12px;background:#151f36;border:1px solid #232c47;color:#e5e9f0;border-radius:6px;">
+
+            <option value="all"
+                {% if request.args.get('risk','all') == 'all' %}selected{% endif %}>
+                All Risk Levels
+            </option>
+
+            <option value="High Risk"
+                {% if request.args.get('risk') == 'High Risk' %}selected{% endif %}>
+                High
+            </option>
+
+            <option value="Medium Risk"
+                {% if request.args.get('risk') == 'Medium Risk' %}selected{% endif %}>
+                Medium
+            </option>
+
+            <option value="Low Risk"
+                {% if request.args.get('risk') == 'Low Risk' %}selected{% endif %}>
+                Low
+            </option>
+        </select>
+
+        <!-- Apply -->
+        <button type="submit">Apply</button>
+
+    </form>
+</div>
+
+<!-- ================= HISTORY TABLE ================= -->
+<div class="panel">
+
+    <!-- Export Buttons -->
+    <div class="actions" style="margin-bottom:15px;">
+        <a href="{{ url_for('export_excel') }}">Export Excel</a>
+        <a href="{{ url_for('export_pdf') }}">Export PDF</a>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>IP / Domain</th>
+                <th>Threat Level</th>
+                <th>Threat Type</th>
+                <th>Abuse Score</th>
+                <th>Open Ports</th>
+                <th>Analyzed At</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in history %}
+            <tr>
+                <td>{{ loop.index }}</td>
+
+                <!-- Target -->
+                <td>{{ row.target }}</td>
+
+                <!-- Threat Level Badge -->
+                <td>
+                    <span class="badge {{ row.threat_level|lower }}">
+                        {{ row.threat_level }}
+                    </span>
+                </td>
+
+                <!-- Threat Type -->
+                <td>{{ row.threat_type }}</td>
+
+                <!-- Abuse Score -->
+                <td>{{ row.abuse_score }}</td>
+
+                <!-- Open Ports -->
+                <td>
+                    {% if row.open_ports %}
+                        {{ row.open_ports }}
+                    {% else %}
+                        None
+                    {% endif %}
+                </td>
+
+                <!-- Timestamp -->
+                <td>{{ row.created_at }}</td>
+            </tr>
+
+            {% else %}
+            <tr>
+                <td colspan="7" style="text-align:center;color:#9aa4bf;">
+                    No records found
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock %}

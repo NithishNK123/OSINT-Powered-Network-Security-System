@@ -1,0 +1,3 @@
+- [ ] Project scaffolded: backend, frontend, data, tests, .github
+- [ ] README.md and requirements.txt created
+- [ ] Initial backend and frontend entry points created

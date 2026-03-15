@@ -1,0 +1,223 @@
+{% extends "base-new.html" %}
+
+{% block title %}Dashboard - OSINT ADVANTAGE{% endblock %}
+
+{% block content %}
+<div style="padding: 0;">
+    <script id="dashboard-data" type="application/json">
+        {{ chart_data | tojson | safe }}
+    </script>
+    <script>
+        window.DASHBOARD_DATA = JSON.parse(document.getElementById('dashboard-data').textContent);
+    </script>
+    <!-- KPI Cards Row -->
+    <div class="kpi-grid">
+        <div class="kpi-card card">
+            <i class="fas fa-search" style="font-size: 24px; color: var(--accent-blue); margin-bottom: 10px;"></i>
+            <div class="kpi-label">Total Scans</div>
+            <div class="kpi-value animate-number">{{ stats.total }}</div>
+        </div>
+
+        <div class="kpi-card card">
+            <i class="fas fa-exclamation-circle" style="font-size: 24px; color: #ef4444; margin-bottom: 10px;"></i>
+            <div class="kpi-label">High Risk IPs</div>
+            <div class="kpi-value animate-number">{{ stats.high }}</div>
+        </div>
+
+        <div class="kpi-card card">
+            <i class="fas fa-alert" style="font-size: 24px; color: #f97316; margin-bottom: 10px;"></i>
+            <div class="kpi-label">Medium Risk</div>
+            <div class="kpi-value animate-number">{{ stats.medium }}</div>
+        </div>
+
+        <div class="kpi-card card">
+            <i class="fas fa-shield-alt" style="font-size: 24px; color: #10b981; margin-bottom: 10px;"></i>
+            <div class="kpi-label">Low Risk</div>
+            <div class="kpi-value animate-number">{{ stats.low }}</div>
+        </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="grid grid-2">
+        <!-- Issues by Status -->
+        <div class="card chart-card">
+            <div class="card-header">
+                <div class="card-title">Issues by Status</div>
+            </div>
+            <div class="chart-container">
+                <canvas id="statusChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Hosts by Country -->
+        <div class="card chart-card">
+            <div class="card-header">
+                <div class="card-title">Hosts by Country</div>
+            </div>
+            <div class="chart-container">
+                <canvas id="countryChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Most Severe Issues -->
+        <div class="card feature-card">
+            <div class="card-header">
+                <div class="card-title">Most Severe Issues</div>
+            </div>
+            <div class="stats-table" style="margin-top: auto; overflow-y: auto;">
+                <table>
+                    <tbody>
+                        {% if history %}
+                        {% for scan in history|sort(attribute='risk_score', reverse=True) %}
+                        {% if loop.index <= 5 %} <tr>
+                            <td>{{ scan.target }}</td>
+                            <td>
+                                {% if scan.threat_level == 'High Risk' %}
+                                <span class="badge badge-critical">High</span>
+                                {% elif scan.threat_level == 'Medium Risk' %}
+                                <span class="badge badge-high">Med</span>
+                                {% else %}
+                                <span class="badge badge-low">Low</span>
+                                {% endif %}
+                            </td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                            {% else %}
+                            <tr>
+                                <td colspan="2" style="text-align: center; color: var(--text-muted); padding: 20px;">No
+                                    scans recorded yet</td>
+                            </tr>
+                            {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- News Analysis -->
+        <div class="card feature-card">
+            <div class="card-header">
+                <div class="card-title">Threat Intelligence Feed</div>
+            </div>
+            <div style="margin-top: auto; overflow-y: auto;">
+                <div style="padding: 12px; border-bottom: 1px solid var(--card-border); cursor: pointer; transition: var(--transition);"
+                    onmouseover="this.style.background='rgba(59,130,246,0.05)'"
+                    onmouseout="this.style.background='transparent'">
+                    <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">2 hours ago</div>
+                    <div style="font-size: 13px; font-weight: 600; color: var(--text-primary);">New malware campaign
+                        detected</div>
+                </div>
+                <div style="padding: 12px; border-bottom: 1px solid var(--card-border); cursor: pointer; transition: var(--transition);"
+                    onmouseover="this.style.background='rgba(59,130,246,0.05)'"
+                    onmouseout="this.style.background='transparent'">
+                    <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">5 hours ago</div>
+                    <div style="font-size: 13px; font-weight: 600; color: var(--text-primary);">Zero-day vulnerability
+                        announced</div>
+                </div>
+                <div style="padding: 12px;">
+                    <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 4px;">1 day ago</div>
+                    <div style="font-size: 13px; font-weight: 600; color: var(--text-primary);">APT group infrastructure
+                        identified</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Reports -->
+        <div class="card feature-card">
+            <div class="card-header">
+                <div class="card-title">Latest Reports</div>
+            </div>
+            <div class="stats-table" style="margin-top: auto; overflow-y: auto;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="font-size: 12px;">
+                                <i class="fas fa-file-pdf" style="color: #ef4444; margin-right: 8px;"></i>
+                                Monthly Threat Report
+                            </td>
+                            <td style="text-align: right; font-size: 11px; color: var(--text-muted);">Feb 2026</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 12px;">
+                                <i class="fas fa-file-pdf" style="color: #ef4444; margin-right: 8px;"></i>
+                                IP Reputation Analysis
+                            </td>
+                            <td style="text-align: right; font-size: 11px; color: var(--text-muted);">Feb 2026</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 12px;">
+                                <i class="fas fa-file-pdf" style="color: #ef4444; margin-right: 8px;"></i>
+                                Vulnerability Assessment
+                            </td>
+                            <td style="text-align: right; font-size: 11px; color: var(--text-muted);">Jan 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Severity Over Time -->
+        <div class="card chart-card">
+            <div class="card-header">
+                <div class="card-title">Issues Based on Severity</div>
+            </div>
+            <div class="chart-container">
+                <canvas id="severityChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Top Threat Actors -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Top Threat Actors</div>
+            </div>
+            <div style="margin-top: 20px;">
+                <div
+                    style="padding: 12px; border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 13px; font-weight: 600;">APT28 (Fancy Bear)</span>
+                    <span class="badge badge-critical">45</span>
+                </div>
+                <div
+                    style="padding: 12px; border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 13px; font-weight: 600;">APT29 (Cozy Bear)</span>
+                    <span class="badge badge-high">32</span>
+                </div>
+                <div style="padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 13px; font-weight: 600;">Lazarus Group</span>
+                    <span class="badge badge-high">28</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top TTPs -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Top MITRE TTPs</div>
+            </div>
+            <div style="margin-top: 20px;">
+                <div
+                    style="padding: 12px; border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 13px; font-weight: 600;">T1071: Cmd & Control</span>
+                    <span class="badge badge-high">89</span>
+                </div>
+                <div
+                    style="padding: 12px; border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 13px; font-weight: 600;">T1021: Remote Services</span>
+                    <span class="badge badge-medium">65</span>
+                </div>
+                <div style="padding: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 13px; font-weight: 600;">T1566: Phishing</span>
+                    <span class="badge badge-medium">54</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block page_script %}
+<script>
+
+</script>
+{% endblock %}

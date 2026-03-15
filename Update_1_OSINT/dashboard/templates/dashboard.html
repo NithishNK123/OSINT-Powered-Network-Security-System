@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}SOC Dashboard{% endblock %}
+
+{% block content %}
+
+<!-- ================= KPI CARDS ================= -->
+<div class="cards">
+    <div class="card">
+        <h4>Total Scans</h4>
+        <p data-count="{{ stats.total }}">{{ stats.total }}</p>
+    </div>
+
+    <div class="card high">
+        <h4>High Risk IPs</h4>
+        <p data-count="{{ stats.high }}">{{ stats.high }}</p>
+    </div>
+
+    <div class="card medium">
+        <h4>Medium Risk</h4>
+        <p data-count="{{ stats.medium }}">{{ stats.medium }}</p>
+    </div>
+
+    <div class="card low">
+        <h4>Low Risk</h4>
+        <p data-count="{{ stats.low }}">{{ stats.low }}</p>
+    </div>
+</div>
+
+<!-- ================= MAIN DASHBOARD GRID (4x SQUARES) ================= -->
+<div class="dashboard-grid">
+
+    <!-- 1️⃣ Issues by Status -->
+    <section class="card">
+        <h3>Issues by Status</h3>
+        <canvas id="issuesStatusChart"></canvas>
+        <div class="centered-total">
+            {{ stats.total }}<br>
+            <span style="font-size:13px;color:#9aa4bf;">TOTAL ISSUES</span>
+        </div>
+    </section>
+
+    <!-- 2️⃣ Hosts by Country -->
+    <section class="card">
+        <h3>Hosts by Country</h3>
+        <canvas id="hostsCountryChart"></canvas>
+    </section>
+
+    <!-- 3️⃣ Most Severe Issues -->
+    <section class="card">
+        <h3>Most Severe Issues</h3>
+        <ul class="severe-issues-list">
+            {% for h in history[:5] %}
+            <li>
+                <span class="badge {{ h.threat_level|lower }}">{{ h.threat_level }}</span>
+                {{ h.target }}
+                <div class="seen">{{ h.created_at }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- 4️⃣ News Analysis -->
+    <section class="card">
+        <h3>News Analysis</h3>
+        <ul class="news-list">
+            <li>
+                <span class="news-tag plausible">PLAUSIBLE</span>
+                New botnet activity detected
+                <span class="news-date">Today</span>
+            </li>
+            <li>
+                <span class="news-tag on-target">ON-TARGET</span>
+                Increase in scanning activity
+                <span class="news-date">Yesterday</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 5️⃣ Latest Reports -->
+    <section class="card">
+        <h3>Latest Reports</h3>
+        <ul class="reports-list">
+            <li>
+                <span class="report-time">RECENT</span>
+                OSINT Threat Summary
+                <span class="report-type">Auto-Generated</span>
+            </li>
+            <li>
+                <span class="report-time">RECENT</span>
+                Abuse Trend Report
+                <span class="report-type">Analytics</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 6️⃣ Severity Timeline -->
+    <section class="card">
+        <h3>Issues Based on Severity</h3>
+        <canvas id="severityLineChart"></canvas>
+    </section>
+
+    <!-- 7️⃣ Top Threat Actors -->
+    <section class="card">
+        <h3>My Top Threats – Actors</h3>
+        <ol class="actors-list">
+            <li>APT28</li>
+            <li>APT29</li>
+            <li>FIN7</li>
+            <li>Unknown Botnet</li>
+        </ol>
+    </section>
+
+    <!-- 8️⃣ Top TTPs -->
+    <section class="card">
+        <h3>My Top Threats – TTPs</h3>
+        <ol class="ttps-list">
+            <li>Command & Control</li>
+            <li>Credential Access</li>
+            <li>Port Scanning</li>
+            <li>Exposed Services</li>
+        </ol>
+    </section>
+
+</div>
+
+<!-- ================= BACKEND → JS DATA ================= -->
+<script id="dashboard-data" type="application/json">
+{
+    "status": {
+        "low": {{ stats.low }},
+        "medium": {{ stats.medium }},
+        "high": {{ stats.high }}
+    },
+    "countries": {{ country_data | default([]) | tojson }},
+    "severity_timeline": {
+        "labels": {{ abuse_labels | default([]) | tojson }},
+        "values": {{ abuse_scores | default([]) | tojson }}
+    }
+}
+</script>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

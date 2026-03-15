@@ -1,0 +1,44 @@
+<!-- ================= OPEN PORTS RISK TABLE ================= -->
+<div class="card">
+    <h3>Open Ports & Exposure</h3>
+
+    {% if result.shodan.open_ports %}
+    <table>
+        <thead>
+            <tr>
+                <th>Port</th>
+                <th>Risk</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for port in result.shodan.open_ports %}
+            <tr>
+                <td>{{ port }}</td>
+                <td>
+                    {% if port in [22, 3389, 445, 23] %}
+                        <span class="badge high">High</span>
+                    {% elif port in [21, 25, 3306, 8080] %}
+                        <span class="badge medium">Medium</span>
+                    {% else %}
+                        <span class="badge low">Low</span>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if port == 22 %}SSH Remote Access
+                    {% elif port == 80 %}HTTP Service
+                    {% elif port == 443 %}HTTPS Service
+                    {% elif port == 3389 %}RDP Remote Desktop
+                    {% elif port == 445 %}SMB / File Sharing
+                    {% elif port == 21 %}FTP Service
+                    {% else %}Unknown / Custom Service
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p style="color:#9aa4bf;">No open ports detected</p>
+    {% endif %}
+</div>

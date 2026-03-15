@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}OSINT ADVANTAGE - Threat Intelligence Platform{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= THEME CSS ================= -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/soc.css') }}">
+
+    <!-- ================= ICONS ================= -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ================= CHART.JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    {% block head_extra %}{% endblock %}
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <i class="fa fa-shield-alt" style="color: #00ff88; margin-right: 10px;"></i>
+        OSINT<span>ADVANTAGE</span>
+    </div>
+
+    <!-- TITLE & BREADCRUMB -->
+    <nav class="breadcrumb">
+        <span>{% block breadcrumb %}Threat Intelligence Platform{% endblock %}</span>
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions">
+
+        <!-- 🔔 ALERTS -->
+        <div class="alert-wrapper">
+            <a href="/alerts" class="icon-btn alert-icon" title="View Alerts">
+                <i class="fa fa-bell"></i>
+
+                {% if alert_count is defined and alert_count > 0 %}
+                    <span class="alert-badge">{{ alert_count }}</span>
+                {% endif %}
+            </a>
+        </div>
+
+        <!-- ⚙️ SETTINGS (ADMIN ONLY) -->
+        {% if user_has_role('Admin') %}
+        <a href="/settings" class="icon-btn" title="SOC Settings">
+            <i class="fa fa-gear"></i>
+        </a>
+        {% endif %}
+
+        <!-- 👤 USER ROLE CIRCLE & INFO -->
+        {% if user is defined %}
+        <div class="user-info">
+            <div class="user-circle" title="{{ user.role }}">
+                {{ user.role[0] }}
+            </div>
+            <span class="user-role">{{ user.role }}</span>
+        </div>
+        {% else %}
+        <div class="user-info">
+            <div class="user-circle" title="Guest">G</div>
+            <span class="user-role">Guest</span>
+        </div>
+        {% endif %}
+
+    </div>
+</header>
+
+<!-- ================= LAYOUT ================= -->
+<div style="display:flex; min-height: calc(100vh - 60px);">
+
+    <!-- ================= SIDEBAR NAVIGATION ================= -->
+    <aside class="sidebar">
+        <h2>
+            <i class="fa fa-folder-open"></i> OSINT SOC
+        </h2>
+
+        <!-- DASHBOARD -->
+        <a href="/dashboard"
+           class="nav-link {% if request.path == '/dashboard' %}active{% endif %}">
+            <i class="fa fa-chart-pie"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <!-- ANALYZE (Analyst + Admin) -->
+        {% if user_has_permission('analyze') %}
+        <a href="/analyze"
+           class="nav-link {% if request.path == '/analyze' %}active{% endif %}">
+            <i class="fa fa-search"></i>
+            <span>Analyze</span>
+        </a>
+        {% endif %}
+
+        <!-- HISTORY (All Roles) -->
+        <a href="/history"
+           class="nav-link {% if request.path == '/history' %}active{% endif %}">
+            <i class="fa fa-clock"></i>
+            <span>History</span>
+        </a>
+
+        <!-- REPORTS (All Roles) -->
+        <a href="/reports"
+           class="nav-link {% if request.path == '/reports' %}active{% endif %}">
+            <i class="fa fa-file-chart-line"></i>
+            <span>Reports</span>
+        </a>
+
+        <!-- ALERTS (All Roles) -->
+        <a href="/alerts"
+           class="nav-link {% if request.path == '/alerts' %}active{% endif %}">
+            <i class="fa fa-bell"></i>
+            <span>Alerts</span>
+            {% if alert_count is defined and alert_count > 0 %}
+                <span class="nav-badge">{{ alert_count }}</span>
+            {% endif %}
+        </a>
+
+        <!-- SETTINGS (Admin Only) -->
+        {% if user_has_role('Admin') %}
+        <div class="sidebar-divider"></div>
+        <a href="/settings"
+           class="nav-link {% if request.path == '/settings' %}active{% endif %}">
+            <i class="fa fa-cog"></i>
+            <span>Settings</span>
+        </a>
+        {% endif %}
+
+        <!-- ROLE INFO -->
+        <div class="sidebar-footer">
+            <div class="role-badge">
+                <strong>{{ user.role if user else 'Guest' }}</strong>
+            </div>
+            <small>Role-based access enabled</small>
+        </div>
+        {% block content %}{% endblock %}
+    </main>
+
+</div>
+
+<!-- ================= GLOBAL JS ================= -->
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

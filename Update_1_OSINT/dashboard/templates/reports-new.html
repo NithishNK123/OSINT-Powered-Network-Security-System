@@ -1,0 +1,222 @@
+{% extends "base-new.html" %}
+
+{% block title %}Reports - OSINT ADVANTAGE{% endblock %}
+
+{% block content %}
+<div style="max-width: 1200px;">
+    <h1 style="font-size: 28px; font-weight: 700; margin-bottom: 30px; color: var(--text-primary);">
+        <i class="fas fa-file-pdf"></i> Threat Reports
+    </h1>
+
+    <!-- Report Selection Area -->
+    <div class="card" style="margin-bottom: 40px;">
+        <div class="card-header">
+            <div class="card-title">Select Report</div>
+        </div>
+
+        <div id="selectedReportInfo"
+            style="display: none; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 16px; margin-top: 20px; margin-bottom: 20px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <i class="fas fa-check-circle" style="color: #10b981; font-size: 18px;"></i>
+                <div>
+                    <div style="font-size: 13px; font-weight: 600; color: var(--text-primary);">
+                        Report Selected: <span id="selectedReportName"></span>
+                    </div>
+                    <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+                        Generated: <span id="selectedReportDate"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reports Grid -->
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; margin-top: 20px;">
+            <!-- Monthly Report -->
+            <div class="report-card" onclick="selectReport(this, 'Monthly Threat Report', 'Feb 15, 2026')"
+                style="padding: 20px; background: rgba(59, 130, 246, 0.05); border: 2px solid var(--card-border); border-radius: 8px; cursor: pointer; transition: var(--transition);"
+                onmouseover="this.style.borderColor='var(--accent-blue)'"
+                onmouseout="this.style.borderColor='var(--card-border)'">
+                <i class="fas fa-file-pdf"
+                    style="font-size: 32px; color: #ef4444; margin-bottom: 12px; display: block;"></i>
+                <div style="font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Monthly
+                    Threat Report</div>
+                <div style="font-size: 11px; color: var(--text-muted);">Generated: Feb 15, 2026</div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">
+                    <i class="fas fa-file"></i> 45 pages
+                </div>
+            </div>
+
+            <!-- IP Reputation Analysis -->
+            <div class="report-card" onclick="selectReport(this, 'IP Reputation Analysis', 'Feb 12, 2026')"
+                style="padding: 20px; background: rgba(139, 92, 246, 0.05); border: 2px solid var(--card-border); border-radius: 8px; cursor: pointer; transition: var(--transition);"
+                onmouseover="this.style.borderColor='var(--accent-purple)'"
+                onmouseout="this.style.borderColor='var(--card-border)'">
+                <i class="fas fa-file-pdf"
+                    style="font-size: 32px; color: #ef4444; margin-bottom: 12px; display: block;"></i>
+                <div style="font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">IP
+                    Reputation Analysis</div>
+                <div style="font-size: 11px; color: var(--text-muted);">Generated: Feb 12, 2026</div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">
+                    <i class="fas fa-file"></i> 32 pages
+                </div>
+            </div>
+
+            <!-- Vulnerability Assessment -->
+            <div class="report-card" onclick="selectReport(this, 'Vulnerability Assessment', 'Feb 8, 2026')"
+                style="padding: 20px; background: rgba(6, 182, 212, 0.05); border: 2px solid var(--card-border); border-radius: 8px; cursor: pointer; transition: var(--transition);"
+                onmouseover="this.style.borderColor='var(--accent-cyan)'"
+                onmouseout="this.style.borderColor='var(--card-border)'">
+                <i class="fas fa-file-pdf"
+                    style="font-size: 32px; color: #ef4444; margin-bottom: 12px; display: block;"></i>
+                <div style="font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+                    Vulnerability Assessment</div>
+                <div style="font-size: 11px; color: var(--text-muted);">Generated: Feb 8, 2026</div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">
+                    <i class="fas fa-file"></i> 28 pages
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div
+            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--card-border);">
+            <button id="viewReportBtn" class="btn btn-primary" disabled
+                style="opacity: 0.5; cursor: not-allowed; justify-content: center;">
+                <i class="fas fa-eye"></i> View Report
+            </button>
+            <button id="downloadReportBtn" class="btn btn-secondary" disabled
+                style="opacity: 0.5; cursor: not-allowed; justify-content: center;">
+                <i class="fas fa-download"></i> Download Report
+            </button>
+            <button id="exportReportBtn" class="btn btn-secondary" disabled
+                style="opacity: 0.5; cursor: not-allowed; justify-content: center;">
+                <i class="fas fa-file-excel"></i> Excel Report
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom Target Report -->
+    <div class="card" style="margin-bottom: 40px;">
+        <div class="card-header">
+            <div class="card-title">Custom Target Report</div>
+        </div>
+        <div style="margin-top: 20px; max-width: 600px;">
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;">
+                Generate a comprehensive PDF report for a specific IP address or domain. The report will include all
+                historical scan details for the target.
+            </p>
+            <form action="{{ url_for('export_target_pdf') }}" method="GET"
+                style="display: flex; gap: 12px; align-items: flex-start;">
+                <div style="flex: 1;">
+                    <input type="text" name="target" placeholder="Enter IP or Domain (e.g., 8.8.8.8, example.com)"
+                        required class="form-input" style="width: 100%;">
+                </div>
+                <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+                    <i class="fas fa-file-pdf"></i> Generate Report
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Recent Reports Summary -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Report History</div>
+        </div>
+
+        <table class="stats-table" style="margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th>Report Name</th>
+                    <th>Generated</th>
+                    <th>Size</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: 600;">Monthly Threat Report</td>
+                    <td>Feb 15, 2026</td>
+                    <td>2.4 MB</td>
+                    <td>
+                        <a href="#" class="btn btn-secondary btn-icon" title="Download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 600;">IP Reputation Analysis</td>
+                    <td>Feb 12, 2026</td>
+                    <td>1.8 MB</td>
+                    <td>
+                        <a href="#" class="btn btn-secondary btn-icon" title="Download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 600;">Vulnerability Assessment</td>
+                    <td>Feb 8, 2026</td>
+                    <td>1.5 MB</td>
+                    <td>
+                        <a href="#" class="btn btn-secondary btn-icon" title="Download">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block page_script %}
+<script>
+    function selectReport(element, name, date) {
+        // Remove previous selection
+        document.querySelectorAll('.report-card').forEach(card => {
+            card.style.borderWidth = '2px';
+            card.style.background = card.style.background.replace(/rgba.*?\)/, 'rgba(59, 130, 246, 0.05)');
+        });
+
+        // Mark selected
+        element.style.borderWidth = '3px';
+        element.style.background = 'rgba(59, 130, 246, 0.15)';
+        element.style.borderColor = 'var(--accent-blue)';
+
+        // Show info & enable buttons
+        document.getElementById('selectedReportInfo').style.display = 'block';
+        document.getElementById('selectedReportName').textContent = name;
+        document.getElementById('selectedReportDate').textContent = date;
+
+        // Enable buttons with proper styling
+        const viewBtn = document.getElementById('viewReportBtn');
+        const downloadBtn = document.getElementById('downloadReportBtn');
+        const exportBtn = document.getElementById('exportReportBtn');
+
+        viewBtn.disabled = false;
+        downloadBtn.disabled = false;
+        exportBtn.disabled = false;
+
+        viewBtn.style.opacity = '1';
+        downloadBtn.style.opacity = '1';
+        exportBtn.style.opacity = '1';
+
+        viewBtn.style.cursor = 'pointer';
+        downloadBtn.style.cursor = 'pointer';
+        exportBtn.style.cursor = 'pointer';
+
+        viewBtn.addEventListener('click', () => {
+            window.open("{{ url_for('export_pdf') }}?action=view", '_blank');
+        });
+        downloadBtn.addEventListener('click', () => {
+            window.location.href = "{{ url_for('export_pdf') }}?action=download";
+        });
+        exportBtn.addEventListener('click', () => {
+            window.location.href = "{{ url_for('export_excel') }}";
+        });
+    }
+</script>
+{% endblock %}
