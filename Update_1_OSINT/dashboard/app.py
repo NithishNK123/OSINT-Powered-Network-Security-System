@@ -106,8 +106,13 @@ def login():
         
         if role not in ["viewer", "analyst", "admin"]:
             role = "viewer"
+            
+        # Enforce specific credentials for the admin role
+        if role == "admin":
+            if username != "Nk_Nithish" or password != "Nk_Admin":
+                return render_template("login.html", error="Invalid admin credentials")
         
-        # Create session (demo mode accepts any credentials)
+        # Create session (demo mode accepts any credentials for other roles)
         session["user"] = {
             "username": username,
             "name": username.title(),
@@ -267,18 +272,18 @@ def analyze():
                 engines = session["settings"].get("engines", {})
                 
                 # Demo data generation
-                if target.startswith("8."):
-                    vt = {"malicious": 0}
-                    abuse = {"score": 5}
-                    ports = []
-                elif target.startswith("185."):
+                if target.startswith("185."):
                     vt = {"malicious": 2}
                     abuse = {"score": 40}
                     ports = [22, 80]
-                else:
+                elif "evil" in target.lower() or target.startswith("10.") or target.startswith("192.168."):
                     vt = {"malicious": 5}
                     abuse = {"score": 85}
                     ports = [21, 22, 23, 80, 443]
+                else:
+                    vt = {"malicious": 0}
+                    abuse = {"score": 0}
+                    ports = [80, 443]
 
                 # God-Mode Extra Integrations
                 gn_data = check_greynoise(target, demo_mode=DEMO_MODE)
@@ -503,7 +508,10 @@ def settings():
         # Update alerts settings
         elif action == "update_alerts":
             enabled = request.form.get("enabled") == "on"
-            keep_last_n = int(request.form.get("keep_last_n", 10))
+            
+            keep_last_n_str = request.form.get("keep_last_n", "").strip()
+            keep_last_n = int(keep_last_n_str) if keep_last_n_str.isdigit() else 10
+            
             trigger_on_high_risk = request.form.get("trigger_on_high_risk") == "on"
             
             settings_manager.set_alert_settings(enabled, keep_last_n, trigger_on_high_risk)
@@ -513,7 +521,10 @@ def settings():
         elif action == "update_automation":
             import ipaddress
             enabled = request.form.get("auto_monitor") == "on"
-            interval = int(request.form.get("scan_interval", 300))
+            
+            interval_str = request.form.get("scan_interval", "").strip()
+            interval = int(interval_str) if interval_str.isdigit() else 300
+            
             targets_str = request.form.get("monitor_targets", "")
             
             expanded_targets = []

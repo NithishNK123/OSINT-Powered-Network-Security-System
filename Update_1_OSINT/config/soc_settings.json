@@ -1,7 +1,7 @@
 {
   "metadata": {
     "created_at": null,
-    "updated_at": "2026-03-03T12:13:54.794144",
+    "updated_at": "2026-03-18T05:43:23.085339",
     "version": "1.0"
   },
   "thresholds": {
@@ -20,13 +20,15 @@
     "trigger_on_high_risk_only": true
   },
   "automation": {
-    "auto_monitor_enabled": false,
-    "scan_interval_seconds": 300,
-    "monitored_targets": []
+    "auto_monitor_enabled": true,
+    "scan_interval_seconds": 1,
+    "monitored_targets": [
+      "10.73.243.41"
+    ]
   },
   "notifications": {
     "email_alerts": false,
-    "slack_webhook": "https://hooks.slack.com/services/YOUR_WORKSPACE/YOUR_CHANNEL/YOUR_TOKEN",
+    "slack_webhook": "https://discord.com/api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB",
     "telegram_token": null,
     "admin_email": "nithishkumarnkl2005@gmail.com",
     "email_enabled": true

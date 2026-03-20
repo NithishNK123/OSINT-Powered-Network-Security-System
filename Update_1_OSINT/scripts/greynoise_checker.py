@@ -17,7 +17,10 @@ def check_ip(ip_address: str, demo_mode: bool = True) -> dict:
         time.sleep(1) # Simulate API call
         
         # Simulate different GreyNoise profiles based on last digit of IP
-        last_octet = int(ip_address.split('.')[-1]) if '.' in ip_address else 0
+        try:
+            last_octet = int(ip_address.split('.')[-1]) if '.' in ip_address else 0
+        except ValueError:
+            last_octet = 0
         
         if last_octet % 3 == 0:
             return {

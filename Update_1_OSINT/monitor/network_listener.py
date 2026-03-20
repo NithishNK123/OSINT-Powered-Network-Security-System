@@ -13,6 +13,13 @@ SOC Network Listener (Safe Mode)
 import time
 import threading
 from datetime import datetime
+import sys
+from pathlib import Path
+
+# Add project root to python path to allow direct execution
+project_root = str(Path(__file__).resolve().parents[1])
+if project_root not in sys.path:
+    sys.path.append(project_root)
 
 from monitor.auto_analyzer import analyze_target
 

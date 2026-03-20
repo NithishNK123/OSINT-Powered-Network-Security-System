@@ -6855,3 +6855,1049 @@
 [2026-03-13 12:42:27,601] [MONITOR] 127.0.0.1 - - [13/Mar/2026 12:42:27] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
 [2026-03-13 12:42:27,603] [MONITOR] [MONITOR] Auto-monitor stopped
 [2026-03-13 12:42:27,608] [MONITOR] 127.0.0.1 - - [13/Mar/2026 12:42:27] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 06:53:17,717] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 06:53:17,890] [MONITOR] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-18 06:53:17,891] [MONITOR] [33mPress CTRL+C to quit[0m
+[2026-03-18 06:53:17,903] [MONITOR]  * Restarting with stat
+[2026-03-18 06:53:20,279] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 06:53:20,298] [MONITOR]  * Debugger is active!
+[2026-03-18 06:53:20,306] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 06:54:15,140] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:54:15,141] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:54:15] "[32mGET / HTTP/1.1[0m" 302 -
+[2026-03-18 06:54:15,214] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:54:15,215] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:54:15] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:54:16,076] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:54:16,077] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:54:16] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 06:54:16,395] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:54:16,396] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:54:16] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:56:56,486] [MONITOR]  * Detected change in 'C:\\Users\\User\\OneDrive\\Desktop\\Final OSINT\\Update_1_OSINT\\dashboard\\app.py', reloading
+[2026-03-18 06:56:56,834] [MONITOR]  * Restarting with stat
+[2026-03-18 06:57:00,394] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 06:57:00,422] [MONITOR]  * Debugger is active!
+[2026-03-18 06:57:00,429] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 06:57:50,974] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:57:50,975] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:57:50] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:57:51,039] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:57:51,040] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:57:51] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 06:57:51,207] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:57:51,208] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:57:51] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:57:52,851] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:57:52,853] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:57:52] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:57:52,894] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:57:52,895] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:57:52] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 06:57:53,113] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:57:53,114] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:57:53] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:58:02,889] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:02,890] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:02] "[32mGET / HTTP/1.1[0m" 302 -
+[2026-03-18 06:58:02,923] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:02,923] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:02] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:58:03,154] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:03,154] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:03] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 06:58:03,323] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:03,324] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:03] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:58:12,632] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:12,632] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:12] "POST /login HTTP/1.1" 200 -
+[2026-03-18 06:58:12,885] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:12,886] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 06:58:13,208] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:13,209] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:13] "GET /login HTTP/1.1" 200 -
+[2026-03-18 06:58:32,293] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:32,293] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-03-18 06:58:32,673] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:32,673] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:32] "GET /dashboard HTTP/1.1" 200 -
+[2026-03-18 06:58:32,694] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:32,695] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:32] "GET /static/css/soc.css HTTP/1.1" 200 -
+[2026-03-18 06:58:32,869] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:32,870] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:32] "GET /static/css/modern-soc.css HTTP/1.1" 200 -
+[2026-03-18 06:58:33,028] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:33,029] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:33,030] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:33] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+[2026-03-18 06:58:33,031] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:33] "GET /static/js/charts.js HTTP/1.1" 200 -
+[2026-03-18 06:58:33,497] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 06:58:33,497] [MONITOR] 127.0.0.1 - - [18/Mar/2026 06:58:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-03-18 07:00:34,265] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:34,265] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:34] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 07:00:34,446] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:34,446] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:34] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:34,478] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:34,479] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:34] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:34,590] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:34,591] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:34,592] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:34] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:34,592] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:34] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:36,201] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:36,201] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:36] "GET /alerts HTTP/1.1" 200 -
+[2026-03-18 07:00:36,517] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:36,517] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:36] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:36,529] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:36,530] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:36,531] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:36,531] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:36] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:36,531] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:36] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:36,531] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:36] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:39,558] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:39,558] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:39] "GET /history HTTP/1.1" 200 -
+[2026-03-18 07:00:39,778] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:39,779] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:39] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:39,785] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:39,786] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:39] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:39,890] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:39,891] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:39,892] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:39] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:39,892] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:39] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:54,599] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:54,599] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:54] "GET /campaigns HTTP/1.1" 200 -
+[2026-03-18 07:00:54,868] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:54,868] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:54] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:54,919] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:54,919] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:54,920] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:54,920] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:54] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:54,921] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:54] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:54,921] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:54] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:00:56,906] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:00:56,907] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:00:56] "GET /api/graph_data/1 HTTP/1.1" 200 -
+[2026-03-18 07:01:06,669] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:06,670] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:06] "GET /reports HTTP/1.1" 200 -
+[2026-03-18 07:01:06,958] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:06,959] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:06] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:06,991] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:06,991] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:06,992] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:06,993] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:06] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:06,993] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:06] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:06,994] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:06] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:21,379] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:21,379] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:21] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 07:01:21,600] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:21,601] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:21] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:21,607] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:21,608] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:21] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:21,704] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:21,706] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:21,706] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:21] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:21,707] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:21] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:23,545] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:23,546] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:23] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 07:01:23,855] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:23,855] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:23] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:23,873] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:23,873] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:23,874] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:23,874] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:23] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:23,874] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:23] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:23,875] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:23] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:30,546] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:30,547] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:30] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:01:30,561] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:30,562] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:30,562] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:30] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:30,563] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:30] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:30,865] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:30,866] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:01:30,866] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:30] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:01:30,867] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:01:30] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:03:16,850] [MONITOR]  * Detected change in 'C:\\Users\\User\\OneDrive\\Desktop\\Final OSINT\\Update_1_OSINT\\scripts\\greynoise_checker.py', reloading
+[2026-03-18 07:03:17,164] [MONITOR]  * Restarting with stat
+[2026-03-18 07:03:20,768] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 07:03:20,797] [MONITOR]  * Debugger is active!
+[2026-03-18 07:03:20,804] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 07:04:05,252] [MONITOR] Generated Mitigate Action Token: d73e70c4-e951-4c1e-9c9b-ba7afab01aa6
+[2026-03-18 07:04:05,284] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:04:05,285] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:04:05] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:04:15,800] [MONITOR] Generated Mitigate Action Token: 8fcc029c-2a1f-486c-9a49-7ea531956a2d
+[2026-03-18 07:04:15,801] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:04:15,802] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:04:15] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:04:15,819] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:04:15,820] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:04:15] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:04:16,128] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:04:16,129] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:04:16,130] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:04:16] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:04:16,131] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:04:16] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:04:16,131] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:04:16,133] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:04:16] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:06,701] [MONITOR] Generated Mitigate Action Token: 0fbdc3d6-4b86-43a9-8155-26c653c97c96
+[2026-03-18 07:05:06,702] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:06,703] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:06] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:05:06,725] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:06,726] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:06,727] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:06] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:06,728] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:06] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:07,037] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:07,037] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:07,038] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:07] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:07,038] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:07] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:40,820] [MONITOR] Generated Mitigate Action Token: 89a89879-87b0-4b06-a68d-55285a70c1d4
+[2026-03-18 07:05:40,821] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:40,822] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:40] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:05:40,839] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:40,839] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:40,840] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:40] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:40,841] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:40] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:41,158] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:41,158] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:05:41,159] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:41] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:05:41,159] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:05:41] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:06:56,191] [MONITOR]  * Detected change in 'C:\\Users\\User\\OneDrive\\Desktop\\Final OSINT\\Update_1_OSINT\\dashboard\\app.py', reloading
+[2026-03-18 07:06:56,554] [MONITOR]  * Restarting with stat
+[2026-03-18 07:06:59,165] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 07:06:59,185] [MONITOR]  * Debugger is active!
+[2026-03-18 07:06:59,192] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 07:07:27,155] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:27,155] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:27] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:07:27,172] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:27,172] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:27,173] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:27] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:27,173] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:27] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:27,490] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:27,490] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:27,491] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:27] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:27,491] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:27] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:41,149] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:41,150] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:41] "GET /alerts HTTP/1.1" 200 -
+[2026-03-18 07:07:41,372] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:41,373] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:41] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:41,404] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:41,404] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:41] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:41,482] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:41,482] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:41,483] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:41] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:41,483] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:41] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:42,961] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:42,961] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:42] "GET /campaigns HTTP/1.1" 200 -
+[2026-03-18 07:07:43,262] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:43,263] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:43] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:43,296] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:43,297] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:43,298] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:43] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:43,298] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:43,299] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:43] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:43,299] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:43] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:44,223] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:44,224] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:44] "GET /history HTTP/1.1" 200 -
+[2026-03-18 07:07:44,456] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:44,456] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:44] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:44,472] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:44,473] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:44] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:44,551] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:44,553] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:44,554] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:44] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:44,554] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:44] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:50,920] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:50,921] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:50] "GET /dashboard HTTP/1.1" 200 -
+[2026-03-18 07:07:51,217] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:51,218] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:51] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:51,250] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:51,251] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:51,251] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:51] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:51,252] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:51,252] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:51] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:51,252] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:51] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:51,839] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:51,840] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:51] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 07:07:52,088] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:52,089] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:52,089] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:52] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:52,090] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:52] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:52,167] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:52,168] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:52] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:07:52,168] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:07:52,169] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:07:52] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:00,475] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:00,476] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:00] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:08:00,490] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:00,491] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:00] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:00,807] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:00,808] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:00,810] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:00] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:00,810] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:00] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:00,811] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:00,812] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:00] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:51,284] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:51,285] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:51] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:08:51,300] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:51,301] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:51,301] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:51] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:51,301] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:51] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:51,616] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:51,616] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:08:51,616] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:51] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:08:51,617] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:08:51] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:10:35,912] [MONITOR]  * Detected change in 'C:\\Users\\User\\OneDrive\\Desktop\\Final OSINT\\Update_1_OSINT\\dashboard\\app.py', reloading
+[2026-03-18 07:10:36,198] [MONITOR]  * Restarting with stat
+[2026-03-18 07:10:38,709] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 07:10:38,729] [MONITOR]  * Debugger is active!
+[2026-03-18 07:10:38,736] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 07:12:33,159] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:33,160] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:33] "GET /history HTTP/1.1" 200 -
+[2026-03-18 07:12:33,359] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:33,360] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:33] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:33,391] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:33,392] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:33] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:33,487] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:33,488] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:33,489] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:33] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:33,490] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:33] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:35,221] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:35,222] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:35] "GET /dashboard HTTP/1.1" 200 -
+[2026-03-18 07:12:35,523] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:35,524] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:35] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:35,557] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:35,558] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:35,559] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:35] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:35,559] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:35,559] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:35] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:35,560] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:35] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:36,861] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:36,862] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:36] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 07:12:37,097] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:37,098] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:37] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:37,105] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:37,106] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:37] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:37,192] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:37,193] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:37,193] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:37] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:37,194] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:37] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:38,306] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:38,307] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:38] "GET /alerts HTTP/1.1" 200 -
+[2026-03-18 07:12:38,604] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:38,605] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:38] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:38,640] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:38,641] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:38,641] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:12:38,641] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:38] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:38,642] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:38] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:12:38,642] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:12:38] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:14:59,377] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:14:59,377] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:14:59] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 07:14:59,624] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:14:59,625] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:14:59] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:14:59,635] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:14:59,635] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:14:59] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:14:59,702] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:14:59,703] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:14:59,703] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:14:59] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:14:59,704] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:14:59] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:07,291] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:07,291] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:07] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:15:07,305] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:07,305] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:07] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:07,611] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:07,612] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:07,612] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:07,613] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:07] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:07,613] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:07] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:07,614] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:07] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:28,567] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:28,567] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:28] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:15:28,583] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:28,583] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:28,584] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:28] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:28,585] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:28] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:28,898] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:28,898] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:28,901] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:28] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:28,901] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:28] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:51,194] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:51,194] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:51] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:15:51,209] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:51,210] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:51,210] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:51] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:51,210] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:51] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:51,519] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:51,520] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:15:51,520] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:51] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:15:51,521] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:15:51] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:16:31,997] [MONITOR] Generated Mitigate Action Token: 980ee535-df3f-4bcb-bc3b-ea4112b2700a
+[2026-03-18 07:16:31,999] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:16:31,999] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:16:31] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:16:32,019] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:16:32,019] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:16:32,020] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:16:32] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:16:32,020] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:16:32] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:16:32,331] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:16:32,332] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:16:32,332] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:16:32] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:16:32,333] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:16:32] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:12,428] [MONITOR] Generated Mitigate Action Token: 13b06d53-39a2-4e10-9041-7e6d23d24a29
+[2026-03-18 07:17:12,429] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:12,430] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:12] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 07:17:12,446] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:12,447] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:12,447] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:12] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:12,447] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:12] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:12,763] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:12,763] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:12,764] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:12] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:12,765] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:12] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:47,192] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:47,193] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:47] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 07:17:47,421] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:47,422] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:47] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:47,430] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:47,431] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:47] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:47,517] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:47,518] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:17:47,519] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:47] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:17:47,519] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:17:47] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:33:51,889] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:33:51,890] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:33:51] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 07:33:51,909] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:33:51,910] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:33:51] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:33:52,121] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:33:52,121] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:33:52] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:33:52,217] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:33:52,218] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:33:52] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:33:52,219] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:33:52,220] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:33:52] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:04,263] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:04,264] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:04] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 07:35:04,279] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:04,280] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:04] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:04,523] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:04,524] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:04] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:04,587] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:04,588] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:04,588] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:04] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:04,589] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:04] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:14,439] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:14,440] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:14] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 07:35:14,454] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:14,454] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:14] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:14,685] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:14,685] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:14] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:14,763] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:14,763] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 07:35:14,764] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:14] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 07:35:14,764] [MONITOR] 127.0.0.1 - - [18/Mar/2026 07:35:14] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:29:56,038] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 09:29:56,148] [MONITOR] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-18 09:29:56,149] [MONITOR] [33mPress CTRL+C to quit[0m
+[2026-03-18 09:29:56,153] [MONITOR]  * Restarting with stat
+[2026-03-18 09:29:59,943] [MONITOR] [INFO] Auto-monitoring disabled (enable in Settings)
+[2026-03-18 09:29:59,972] [MONITOR]  * Debugger is active!
+[2026-03-18 09:30:00,004] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 09:30:22,135] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:30:22,136] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:30:22] "[32mGET / HTTP/1.1[0m" 302 -
+[2026-03-18 09:30:22,387] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:30:22,388] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:30:22] "GET /login HTTP/1.1" 200 -
+[2026-03-18 09:30:22,926] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:30:22,927] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:30:22] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 09:30:22,938] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:30:22,939] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:30:22] "GET /login HTTP/1.1" 200 -
+[2026-03-18 09:31:07,092] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,093] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-03-18 09:31:07,206] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,207] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "GET /dashboard HTTP/1.1" 200 -
+[2026-03-18 09:31:07,284] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,285] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:31:07,291] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,300] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:31:07,305] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,307] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:31:07,313] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,318] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:31:07,625] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:31:07,627] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:31:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-03-18 09:32:15,266] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:15,267] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:15] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 09:32:15,304] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:15,312] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:15] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:15,316] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:15,319] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:15,322] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:15] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:15,323] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:15] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:15,328] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:15,330] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:15] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:24,829] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:24,830] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:24] "POST /analyze HTTP/1.1" 200 -
+[2026-03-18 09:32:24,856] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:24,863] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:24] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:24,870] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:24,871] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:24,877] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:32:24,879] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:24] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:24,880] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:24] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:32:24,880] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:32:24] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:01,821] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:01,821] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:01] "GET /alerts HTTP/1.1" 200 -
+[2026-03-18 09:33:01,843] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:01,846] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:01] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:01,849] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:01,852] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:01] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:01,853] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:01,856] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:01,858] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:01] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:01,859] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:01] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:11,524] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:11,524] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:11] "GET /history HTTP/1.1" 200 -
+[2026-03-18 09:33:11,556] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:11,559] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:11] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:11,566] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:11,566] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:11,568] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:11] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:11,569] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:11] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:11,569] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:11,578] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:11] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:34,417] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:34,418] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:34] "GET /campaigns HTTP/1.1" 200 -
+[2026-03-18 09:33:34,448] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:34,457] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:34] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:34,463] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:34,473] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:34] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:34,476] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:34,478] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:34] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:34,479] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:34,484] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:34] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:36,468] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:36,469] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:36] "GET /api/graph_data/1 HTTP/1.1" 200 -
+[2026-03-18 09:33:43,867] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:43,868] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:43] "GET /reports HTTP/1.1" 200 -
+[2026-03-18 09:33:43,889] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:43,893] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:43] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:43,897] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:43,899] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:43,899] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:43] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:43,902] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:43] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:33:43,905] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:33:43,911] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:33:43] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:34:03,605] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:34:03,606] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:34:03] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:34:03,630] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:34:03,637] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:34:03] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:34:03,639] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:34:03,642] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:34:03] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:34:03,645] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:34:03,646] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:34:03,651] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:34:03] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:34:03,653] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:34:03] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:06,319] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:06,320] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:06] "GET /reports HTTP/1.1" 200 -
+[2026-03-18 09:36:06,353] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:06,359] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:06] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:06,366] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:06,369] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:06,370] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:06] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:06,371] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:06,371] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:06] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:06,378] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:06] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:20,467] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:20,468] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:20] "GET /analyze HTTP/1.1" 200 -
+[2026-03-18 09:36:20,497] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:20,502] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:20] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:20,506] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:20,514] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:20,516] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:20] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:20,519] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:20] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:20,521] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:20,523] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:20] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:22,702] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:22,702] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:22] "GET /alerts HTTP/1.1" 200 -
+[2026-03-18 09:36:22,732] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:22,734] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:22,737] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:22] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:22,738] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:22] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:22,745] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:22,747] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:22,749] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:22] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:22,752] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:22] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:25,691] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:25,692] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:25] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:36:25,732] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:25,742] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:25] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:25,753] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:25,757] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:25,760] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:25] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:25,761] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:36:25,762] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:25] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:36:25,764] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:36:25] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:11,125] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:11,126] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:11] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:37:11,170] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:11,174] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:11] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:11,178] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:11,181] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:11,185] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:11] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:11,185] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:11] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:11,188] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:11,192] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:11] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:16,133] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:16,191] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:16] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+[2026-03-18 09:37:16,217] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:16] "GET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2026-03-18 09:37:16,219] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:16] "GET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2026-03-18 09:37:16,274] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:16] "GET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2026-03-18 09:37:16,303] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:16] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:23,520] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:23,522] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:23] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:37:27,322] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:27,323] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:27] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:37:27,347] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:27,354] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:27] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:27,356] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:27,359] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:27] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:27,360] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:27,362] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:27,363] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:27] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:27,371] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:27] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:30,621] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:30,675] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:30] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+[2026-03-18 09:37:30,700] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:30] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:30,703] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:30] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:30,736] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:30] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:34,705] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:34,706] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:34] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:37:58,351] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:58,351] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:58] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:37:58,377] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:58,378] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:58] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:58,384] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:58,388] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:58,392] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:37:58,396] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:58] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:58,397] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:58] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:37:58,398] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:37:58] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:02,299] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:02,355] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:02] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+[2026-03-18 09:38:02,373] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:02] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:02,377] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:02] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:02,407] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:02] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:11,166] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:11,167] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:11] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:38:17,963] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:17,963] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:17] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:38:17,995] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:17,997] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:17] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:18,001] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:18,008] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:18] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:18,009] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:18,018] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:18,020] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:18] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:18,026] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:18] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:30,074] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:38:30,128] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:30] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+[2026-03-18 09:38:30,159] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:30] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:30,168] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:30] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:38:30,202] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:38:30] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2026-03-18 09:40:23,532] [MONITOR]  * Detected change in 'C:\\Users\\User\\OneDrive\\Desktop\\Final OSINT\\Update_1_OSINT\\dashboard\\app.py', reloading
+[2026-03-18 09:40:24,038] [MONITOR]  * Restarting with stat
+[2026-03-18 09:40:29,293] [MONITOR] Starting auto-monitor loop with 1 targets
+[2026-03-18 09:40:29,294] [MONITOR] Scan interval: 300 seconds
+[2026-03-18 09:40:29,315] [MONITOR] [OK] Auto-monitoring enabled and started
+[2026-03-18 09:40:29,316] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 09:40:29,510] [MONITOR]  * Debugger is active!
+[2026-03-18 09:40:29,527] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 09:40:38,969] [MONITOR] Generated Mitigate Action Token: c69bdd0c-6ba2-4755-a953-c316ad643731
+[2026-03-18 09:40:40,978] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 09:40:41,979] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 09:40:50,522] [MONITOR] Generated Mitigate Action Token: 54650d6e-756f-41a3-8b85-ba5f458960a0
+[2026-03-18 09:40:52,529] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 09:40:53,532] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 09:41:09,208] [MONITOR] Generated Mitigate Action Token: a9d654f0-4ee4-4f87-b0ce-e34601ea17dc
+[2026-03-18 09:41:11,214] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 09:41:12,215] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 09:41:20,003] [MONITOR] Generated Mitigate Action Token: 539dcc76-637f-45ac-8522-3117db58f4fd
+[2026-03-18 09:41:22,009] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 09:41:23,010] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 09:41:27,419] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:41:27,420] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:41:27] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:41:27,455] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:41:27,460] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:41:27] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:41:27,467] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:41:27,487] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:41:27,494] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:41:27,496] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:41:27] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:41:27,497] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:41:27] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:41:27,502] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:41:27] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:41:33,048] [MONITOR] Generated Mitigate Action Token: c4297281-5eb0-481a-bdc1-f8794ad04ef4
+[2026-03-18 09:41:35,054] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 09:42:10,054] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:42:10,055] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:42:10] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:42:10,088] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:42:10,094] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:42:10] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:42:10,099] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:42:10,100] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:42:10,104] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:42:10,104] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:42:10] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:42:10,105] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:42:10] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:42:10,106] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:42:10] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:45:52,917] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:45:52,918] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:45:52] "GET /history HTTP/1.1" 200 -
+[2026-03-18 09:45:52,947] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:45:52,949] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:45:52] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:45:52,957] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:45:52,961] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:45:52,961] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:45:52] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:45:52,962] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:45:52,964] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:45:52] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:45:52,965] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:45:52] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:46:23,076] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:46:23,076] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:46:23] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:46:23,106] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:46:23,109] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:46:23] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:46:23,115] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:46:23,119] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:46:23,122] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:46:23] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:46:23,125] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:46:23] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:46:23,127] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:46:23,128] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:46:23] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:51:36,401] [MONITOR] Analyzing target: 8.8.8.8
+[2026-03-18 09:51:36,448] [MONITOR] Analyzing target: 1.1.1.1
+[2026-03-18 09:51:36,470] [MONITOR] Analyzing target: 185.199.108.153
+[2026-03-18 09:52:35,985] [MONITOR] Analyzing target: 8.8.8.8
+[2026-03-18 09:52:36,016] [MONITOR] Analyzing target: 1.1.1.1
+[2026-03-18 09:52:36,044] [MONITOR] Analyzing target: 185.199.108.153
+[2026-03-18 09:53:25,718] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:25,720] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:25] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 09:53:25,742] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:25,743] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:25] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:25,751] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:25,755] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:25] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:25,756] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:25,757] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:25,759] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:25] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:25,759] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:25] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:29,588] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:29,589] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:29] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 09:53:29,614] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:29,617] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:29,618] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:29] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:29,619] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:29] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:29,620] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:29,623] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:29] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 09:53:29,624] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 09:53:29,636] [MONITOR] 127.0.0.1 - - [18/Mar/2026 09:53:29] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 10:02:56,810] [MONITOR]  * Detected change in 'C:\\Users\\User\\OneDrive\\Desktop\\Final OSINT\\Update_1_OSINT\\monitor\\network_listener.py', reloading
+[2026-03-18 10:02:57,266] [MONITOR]  * Restarting with stat
+[2026-03-18 10:03:02,523] [MONITOR] Starting auto-monitor loop with 1 targets
+[2026-03-18 10:03:02,526] [MONITOR] Scan interval: 300 seconds
+[2026-03-18 10:03:02,532] [MONITOR] [OK] Auto-monitoring enabled and started
+[2026-03-18 10:03:02,533] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:03:02,592] [MONITOR]  * Debugger is active!
+[2026-03-18 10:03:02,605] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 10:03:35,041] [MONITOR] Generated Mitigate Action Token: 8731ca7c-ece0-4eb9-a3ad-a2b4d9b8ef31
+[2026-03-18 10:03:37,049] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:03:38,051] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:03:53,690] [MONITOR] Generated Mitigate Action Token: bcae2aeb-707d-4422-91bd-7b1490cfe2b8
+[2026-03-18 10:03:55,695] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:03:56,696] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:04:07,761] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Read timed out. (read timeout=5)
+[2026-03-18 10:04:17,610] [MONITOR] Generated Mitigate Action Token: efd40d56-23f9-460d-86df-cb8c46ea5a3c
+[2026-03-18 10:04:19,615] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:04:20,616] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:04:26,271] [MONITOR] Generated Mitigate Action Token: 3991ad12-6cc0-453d-ba1a-19e87f7a5d7c
+[2026-03-18 10:04:28,276] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:04:29,278] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:04:34,467] [MONITOR] Generated Mitigate Action Token: b0ff2c97-52a5-4745-a736-0a81bccac422
+[2026-03-18 10:04:36,472] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:04:37,473] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:04:40,787] [MONITOR] Analyzing target: 8.8.8.8
+[2026-03-18 10:04:40,833] [MONITOR] Analyzing target: 1.1.1.1
+[2026-03-18 10:04:40,849] [MONITOR] Analyzing target: example.com
+[2026-03-18 10:04:42,867] [MONITOR] Generated Mitigate Action Token: 35c341a7-7635-4feb-ac3d-3f3cf0291ef4
+[2026-03-18 10:04:44,872] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:04:45,873] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:04:57,817] [MONITOR] Generated Mitigate Action Token: b311cd1d-dbbe-434b-9b9e-ca4d524403d3
+[2026-03-18 10:04:59,824] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:05:00,839] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:05:19,679] [MONITOR] Generated Mitigate Action Token: 2bbbdf82-c46b-4a74-80f0-2f6e380dd2a3
+[2026-03-18 10:05:21,685] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:05:22,686] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:05:31,524] [MONITOR] Generated Mitigate Action Token: 180016fa-84db-4b26-8901-87e95e3ff5eb
+[2026-03-18 10:05:33,529] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:05:34,531] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:05:42,175] [MONITOR] Generated Mitigate Action Token: 275d03ea-c598-4dab-a5ce-760dc155b318
+[2026-03-18 10:05:44,180] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:05:45,181] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:05:55,455] [MONITOR] Generated Mitigate Action Token: d7f0b4b5-86c5-44b8-b5e0-013bfadee4d5
+[2026-03-18 10:05:57,460] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:05:58,461] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:05,496] [MONITOR] Generated Mitigate Action Token: 0b90ec0f-19e1-4690-8f1f-0904ddf5a064
+[2026-03-18 10:06:07,501] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:06:08,502] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:16,362] [MONITOR] Generated Mitigate Action Token: 53e246cc-ca0f-4609-a71c-5f22c43a8cca
+[2026-03-18 10:06:18,369] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:06:19,370] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:24,858] [MONITOR] Generated Mitigate Action Token: 8d366f28-611c-47e8-8279-e5e359b3ff77
+[2026-03-18 10:06:26,865] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:06:27,866] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:33,459] [MONITOR] Generated Mitigate Action Token: 6916053a-753d-4d7d-831d-34f15011d5af
+[2026-03-18 10:06:35,464] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:06:36,465] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:41,551] [MONITOR] Generated Mitigate Action Token: 67c1257a-3341-47c3-a4b6-f72c417bddc1
+[2026-03-18 10:06:43,556] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:06:44,557] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:50,475] [MONITOR] Generated Mitigate Action Token: efe76be2-0b5b-4448-9c9d-f54be5b208ba
+[2026-03-18 10:06:52,479] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:06:53,481] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:06:59,368] [MONITOR] Generated Mitigate Action Token: b67d831f-5037-4945-b4ed-417156dde31a
+[2026-03-18 10:07:01,375] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:02,379] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:07:07,479] [MONITOR] Generated Mitigate Action Token: 0dd8efa1-e7d0-4f4d-a58b-a478825c2d25
+[2026-03-18 10:07:09,485] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:10,486] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:07:17,084] [MONITOR] Generated Mitigate Action Token: cad27607-0a46-419f-8ecd-bc5f2eee6224
+[2026-03-18 10:07:19,090] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:20,091] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:07:25,482] [MONITOR] Generated Mitigate Action Token: 68f6687e-4ae1-4423-8245-1a0e310eb3a5
+[2026-03-18 10:07:27,490] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:28,491] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:07:34,698] [MONITOR] Generated Mitigate Action Token: b6d02acc-711e-4f57-9a4e-23cdb4c7a302
+[2026-03-18 10:07:36,703] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:37,705] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:07:43,504] [MONITOR] Generated Mitigate Action Token: 8ed72d67-8d85-41ff-8bd5-49243e04edaf
+[2026-03-18 10:07:45,509] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:46,510] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:07:51,799] [MONITOR] Generated Mitigate Action Token: 9f7ba46d-d13b-4702-832b-20bebe83fe6a
+[2026-03-18 10:07:53,804] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:07:54,806] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:00,708] [MONITOR] Generated Mitigate Action Token: 82007050-83ba-4f9f-b9ae-93698a4e6520
+[2026-03-18 10:08:02,715] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:03,717] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:10,436] [MONITOR] Generated Mitigate Action Token: f3112099-53db-48e6-9df8-e3f6fbf7328f
+[2026-03-18 10:08:12,442] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:13,443] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:18,692] [MONITOR] Generated Mitigate Action Token: c84bff18-9060-4f1e-93b5-c884c8ab95c5
+[2026-03-18 10:08:20,697] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:21,698] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:27,433] [MONITOR] Generated Mitigate Action Token: bbbbac8e-1919-4185-a078-2d042685bda1
+[2026-03-18 10:08:29,439] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:30,441] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:35,830] [MONITOR] Generated Mitigate Action Token: 166efbc8-e60a-40f0-851d-b718b12b2891
+[2026-03-18 10:08:37,835] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:38,836] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:44,536] [MONITOR] Generated Mitigate Action Token: 476202d3-40a1-4319-aa99-4108e2d21d73
+[2026-03-18 10:08:46,542] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:47,543] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:08:54,879] [MONITOR] Generated Mitigate Action Token: 7549d6bf-7389-42af-8f99-156460dfe3a8
+[2026-03-18 10:08:56,885] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:08:57,886] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:09:03,071] [MONITOR] Generated Mitigate Action Token: a2acca21-23a5-44d9-a5d6-08bf48c172ee
+[2026-03-18 10:09:05,077] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:09:06,078] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:09:11,673] [MONITOR] Generated Mitigate Action Token: a4ca9a5b-c18c-4495-96da-e5abd7ab5247
+[2026-03-18 10:09:13,681] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:09:14,682] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:09:22,555] [MONITOR] Generated Mitigate Action Token: b139f6b6-7d5e-4f8c-bc2f-da395e4bc59d
+[2026-03-18 10:09:24,561] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:09:25,563] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:09:30,970] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Read timed out. (read timeout=5)
+[2026-03-18 10:09:35,841] [MONITOR] Generated Mitigate Action Token: 6b3ef59f-45e0-4ec3-86c8-29007a93c599
+[2026-03-18 10:09:37,845] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:09:38,847] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:09:44,345] [MONITOR] Generated Mitigate Action Token: 4667127c-ec5b-4086-99e1-140bd97e8cbb
+[2026-03-18 10:09:46,351] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:09:47,352] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:03,568] [MONITOR] Generated Mitigate Action Token: d32ea669-d035-44d2-a5fe-6d153cc185c4
+[2026-03-18 10:10:05,574] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:06,576] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:12,583] [MONITOR] Generated Mitigate Action Token: 95c60e9e-01ee-414c-b9ca-605c25380f82
+[2026-03-18 10:10:14,589] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:15,589] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:20,588] [MONITOR] Generated Mitigate Action Token: bcbc9117-9d6a-441e-99e5-4efa3ab2dcf8
+[2026-03-18 10:10:22,592] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:23,594] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:28,785] [MONITOR] Generated Mitigate Action Token: bf61a823-9962-4e54-97d7-0a16f70bf3c8
+[2026-03-18 10:10:30,797] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:31,798] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:37,287] [MONITOR] Generated Mitigate Action Token: 5f7f1228-6a6e-4cf9-ab2a-a77047c59126
+[2026-03-18 10:10:39,293] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:40,294] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:40,653] [MONITOR] Analyzing target: 8.8.8.8
+[2026-03-18 10:10:40,677] [MONITOR] Analyzing target: 1.1.1.1
+[2026-03-18 10:10:40,700] [MONITOR] Analyzing target: example.com
+[2026-03-18 10:10:45,369] [MONITOR] Generated Mitigate Action Token: a0c27695-a814-4871-a2c2-3a2827cf5c6d
+[2026-03-18 10:10:47,376] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:48,377] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:10:53,776] [MONITOR] Generated Mitigate Action Token: 28041956-239a-4674-8807-368bc612f21e
+[2026-03-18 10:10:55,786] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:10:56,787] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:11:16,770] [MONITOR] Generated Mitigate Action Token: cdeff198-131b-46a0-905e-bf213897fc1b
+[2026-03-18 10:11:18,775] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:11:19,776] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:11:38,821] [MONITOR] Generated Mitigate Action Token: 7f0bdc90-3e5b-48ab-b597-23d2ecc0545d
+[2026-03-18 10:11:40,827] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:11:41,828] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:12:00,641] [MONITOR] Generated Mitigate Action Token: 18b4fd1c-e995-472a-bd20-ad2890e91fbe
+[2026-03-18 10:12:02,646] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:12:03,647] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:12:09,137] [MONITOR] Generated Mitigate Action Token: 425b9729-456a-4f54-b9f6-44d2a9dad799
+[2026-03-18 10:12:11,143] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:12:12,144] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:12:17,742] [MONITOR] Generated Mitigate Action Token: ebd79536-8072-4da2-95a4-2621ba54e957
+[2026-03-18 10:12:19,748] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:12:20,749] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:12:25,822] [MONITOR] Generated Mitigate Action Token: 5b2961b7-599f-4d6a-a27b-27ccad4ef92c
+[2026-03-18 10:12:27,828] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:12:28,829] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 10:12:34,533] [MONITOR] Generated Mitigate Action Token: f832ab91-df02-4d03-b1ad-5993af1edf3a
+[2026-03-18 10:12:36,538] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 10:12:37,539] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:03,827] [MONITOR] Starting auto-monitor loop with 1 targets
+[2026-03-18 11:11:03,829] [MONITOR] Scan interval: 300 seconds
+[2026-03-18 11:11:03,834] [MONITOR] [OK] Auto-monitoring enabled and started
+[2026-03-18 11:11:03,835] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:03,958] [MONITOR] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-03-18 11:11:03,959] [MONITOR] [33mPress CTRL+C to quit[0m
+[2026-03-18 11:11:03,962] [MONITOR]  * Restarting with stat
+[2026-03-18 11:11:07,362] [MONITOR] Starting auto-monitor loop with 1 targets
+[2026-03-18 11:11:07,363] [MONITOR] Scan interval: 300 seconds
+[2026-03-18 11:11:07,369] [MONITOR] [OK] Auto-monitoring enabled and started
+[2026-03-18 11:11:07,370] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:07,405] [MONITOR]  * Debugger is active!
+[2026-03-18 11:11:07,418] [MONITOR]  * Debugger PIN: 386-174-854
+[2026-03-18 11:11:10,504] [MONITOR] Generated Mitigate Action Token: 2be72f0b-7e6f-46b3-a518-02b0e5df3557
+[2026-03-18 11:11:12,513] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:13,095] [MONITOR] Generated Mitigate Action Token: 25837f48-2361-42dd-8cd8-718a3e621ca3
+[2026-03-18 11:11:13,513] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:15,099] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:16,100] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:16,962] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:11:16,964] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:11:16] "[32mGET / HTTP/1.1[0m" 302 -
+[2026-03-18 11:11:16,992] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:11:16,993] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:11:16] "GET /login HTTP/1.1" 200 -
+[2026-03-18 11:11:17,187] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:11:17,188] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:11:17] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+[2026-03-18 11:11:17,196] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:11:17,197] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:11:17] "GET /login HTTP/1.1" 200 -
+[2026-03-18 11:11:19,343] [MONITOR] Generated Mitigate Action Token: bcb81e78-191e-43fd-a88a-06aed3084b05
+[2026-03-18 11:11:21,348] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:21,599] [MONITOR] Generated Mitigate Action Token: e660c28b-a229-4da6-82bb-2d908769eed3
+[2026-03-18 11:11:22,349] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:23,607] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:28,761] [MONITOR] Generated Mitigate Action Token: 2f14ad21-8a57-4064-b381-691a94dcb047
+[2026-03-18 11:11:30,767] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:31,768] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:37,675] [MONITOR] Generated Mitigate Action Token: 47bb3413-2c60-47c9-b04f-51fcefbe4293
+[2026-03-18 11:11:39,684] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:40,686] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:46,685] [MONITOR] Generated Mitigate Action Token: bd7bbf4f-4592-4f90-9da3-ee61c1f47217
+[2026-03-18 11:11:48,697] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:49,698] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:11:56,518] [MONITOR] Generated Mitigate Action Token: 97ab62db-5679-4101-a417-5bbaa4bfe410
+[2026-03-18 11:11:58,526] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:11:59,528] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:12:08,514] [MONITOR] Generated Mitigate Action Token: dfb14ea6-1f05-4a51-ac52-16928a466289
+[2026-03-18 11:12:10,524] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:12:11,525] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:12:17,075] [MONITOR] Generated Mitigate Action Token: 5089fe95-e0eb-463e-8e0f-ed53c423c256
+[2026-03-18 11:12:19,085] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:12:20,086] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:12:21,811] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:21,812] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-03-18 11:12:21,892] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:21,893] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:21] "GET /dashboard HTTP/1.1" 200 -
+[2026-03-18 11:12:21,937] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:21,945] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:21] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:21,952] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:21,955] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:21,957] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:21,960] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:21] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:21,961] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:21] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:21,963] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:21] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:22,230] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:22,231] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-03-18 11:12:30,158] [MONITOR] Generated Mitigate Action Token: 6df0047c-2fde-43ac-9fe1-00defa4bd1fd
+[2026-03-18 11:12:32,173] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:12:33,174] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:12:40,966] [MONITOR] Generated Mitigate Action Token: 18682b91-df1c-4a53-b17a-45c244276bbe
+[2026-03-18 11:12:42,975] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:12:43,976] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:12:44,769] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:44,770] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:44] "GET /history HTTP/1.1" 200 -
+[2026-03-18 11:12:44,790] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:44,794] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:44] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:44,795] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:44,796] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:44,803] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:12:44,804] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:44] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:44,805] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:44] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:44,805] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:12:44] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:12:50,602] [MONITOR] Generated Mitigate Action Token: b5182a17-6247-493e-b563-98017813ae1f
+[2026-03-18 11:12:52,613] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:12:53,615] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:00,334] [MONITOR] Generated Mitigate Action Token: 53c176c5-b033-49d2-971e-5f9e149a7962
+[2026-03-18 11:13:02,343] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:13:03,344] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:03,552] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:03,553] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:03] "GET /settings HTTP/1.1" 200 -
+[2026-03-18 11:13:03,572] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:03,574] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:03] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:03,580] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:03,585] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:03,587] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:03] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:03,590] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:03] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:03,592] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:03,599] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:03] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:10,233] [MONITOR] Generated Mitigate Action Token: eda804a3-781b-4e06-b80a-d1d626d2cd74
+[2026-03-18 11:13:12,238] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:13:13,239] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:19,906] [MONITOR] Generated Mitigate Action Token: ee90fd8d-e189-462a-b011-63f367bd1efb
+[2026-03-18 11:13:21,915] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:13:22,916] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:23,089] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:23,089] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:23] "POST /settings HTTP/1.1" 200 -
+[2026-03-18 11:13:23,121] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:23,123] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:23] "[36mGET /static/css/soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:23,131] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:23,143] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:23,144] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:23] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:23,145] [MONITOR] [MONITOR] Auto-monitor stopped
+[2026-03-18 11:13:23,146] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:23] "[36mGET /static/css/modern-soc.css HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:23,148] [MONITOR] 127.0.0.1 - - [18/Mar/2026 11:13:23] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2026-03-18 11:13:29,017] [MONITOR] Generated Mitigate Action Token: 9d338810-83e1-4c6d-aabb-f97e625854da
+[2026-03-18 11:13:31,022] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:13:32,023] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:38,382] [MONITOR] Generated Mitigate Action Token: 812c3f44-6e31-49fb-88d4-87bdb0c6627d
+[2026-03-18 11:13:40,390] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:13:41,391] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:47,621] [MONITOR] Generated Mitigate Action Token: 360c3eb5-64e3-41be-bebe-4aef7d530dc9
+[2026-03-18 11:13:49,626] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:13:50,627] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:13:57,247] [MONITOR] Generated Mitigate Action Token: e829dcaa-1977-4e60-b9d0-e230a14652fb
+[2026-03-18 11:13:59,253] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:14:00,254] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:14:06,982] [MONITOR] Generated Mitigate Action Token: b37fc142-4d31-4d78-aa26-a638b273b595
+[2026-03-18 11:14:08,987] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:14:09,988] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:14:17,831] [MONITOR] Generated Mitigate Action Token: 86a0a455-c14e-4f61-a7ac-10ef19dfa711
+[2026-03-18 11:14:19,840] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:14:20,841] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:14:26,126] [MONITOR] Generated Mitigate Action Token: 98669e1f-1290-47d5-bf07-6c2353abeba5
+[2026-03-18 11:14:28,131] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:14:29,132] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:14:35,444] [MONITOR] Generated Mitigate Action Token: fce705c2-33cb-4a4d-81ab-ea80c728373f
+[2026-03-18 11:14:37,454] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:14:38,456] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:14:45,278] [MONITOR] Generated Mitigate Action Token: 2cd02431-3eae-47df-aed3-629e42d027ee
+[2026-03-18 11:14:47,284] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:14:48,286] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:14:53,557] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Read timed out. (read timeout=5)
+[2026-03-18 11:15:14,615] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: (421, b'Cannot connect to SMTP server 192.178.211.108 (192.178.211.108:587), connect error 10060')
+[2026-03-18 11:15:16,622] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:15:17,623] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:15:17,668] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB (Caused by NameResolutionError("HTTPSConnection(host='discord.com', port=443): Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-03-18 11:15:17,669] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: [Errno 11001] getaddrinfo failed
+[2026-03-18 11:15:19,674] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:15:20,676] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:15:20,699] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB (Caused by NameResolutionError("HTTPSConnection(host='discord.com', port=443): Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-03-18 11:15:20,701] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: [Errno 11001] getaddrinfo failed
+[2026-03-18 11:15:22,706] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:15:23,707] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:15:23,732] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB (Caused by NameResolutionError("HTTPSConnection(host='discord.com', port=443): Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-03-18 11:15:23,734] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: [Errno 11001] getaddrinfo failed
+[2026-03-18 11:15:25,739] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:15:26,740] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:15:26,775] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB (Caused by NameResolutionError("HTTPSConnection(host='discord.com', port=443): Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-03-18 11:15:26,777] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: [Errno 11001] getaddrinfo failed
+[2026-03-18 11:15:28,782] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:15:29,784] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:15:29,819] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB (Caused by NameResolutionError("HTTPSConnection(host='discord.com', port=443): Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-03-18 11:15:29,821] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: [Errno 11001] getaddrinfo failed
+[2026-03-18 11:15:31,826] [MONITOR] Scan cycle complete. Next scan in 1s
+[2026-03-18 11:15:32,827] [MONITOR] Analyzing target: 10.73.243.41
+[2026-03-18 11:15:32,897] [MONITOR] Webhook dispatch failed: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1483646870961127574/VwgO4S1hSUw3_-XTEs5nL_at0WukKTfS0TSiTwLJvhLtIAN1r86H08g9kilMrWh6XeqB (Caused by NameResolutionError("HTTPSConnection(host='discord.com', port=443): Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-03-18 11:15:32,899] [MONITOR] Failed to send email to nithishkumarnkl2005@gmail.com: [Errno 11001] getaddrinfo failed
+[2026-03-18 11:15:34,905] [MONITOR] Scan cycle complete. Next scan in 1s
